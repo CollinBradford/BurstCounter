@@ -1,0 +1,8 @@
+select figure at 3080 2330 8 -branches -sn=5
+select figure at 3080 2359 8 -branches -sn=5
+select figure at 3070 2526 8 -branches -sn=5
+select figure at 3070 2559 8 -branches -sn=5
+select figure at 3068 2590 8 -branches -sn=5
+select figure at 3068 2618 8 -branches -sn=5
+select figure at 3050 3060 8 -branches -sn=5
+select figure at 2921 3034 8 -branches -sn=5

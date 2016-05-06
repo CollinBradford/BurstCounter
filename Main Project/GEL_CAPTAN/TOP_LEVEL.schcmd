@@ -1,0 +1,4 @@
+select figure at 2407 3568 8 -branches -sn=1
+select figure at 4706 1909 8 -branches -sn=2
+select figure at 4110 1614 8 -branches -sn=2
+move bawin at 4112 1632 to 4032 1632 -sn=2

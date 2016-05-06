@@ -1,0 +1,23 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb_isim_beh.exe" -prj "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb_beh.prj" "work.data_send_tb" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send.vhd" into library work
+Parsing VHDL file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb.vhd" into library work
+Parsing VHDL file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/../ipcore_dir/ADDR_FIFO.vhd" into library work
+Parsing VHDL file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/../ipcore_dir/DATA_FIFO_0.vhd" into library work
+Parsing VHDL file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/../ipcore_dir/INFO_FIFO_0.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity data_send [data_send_default]
+Compiling architecture behavior of entity data_send_tb
+Time Resolution for simulation is 1ps.
+Compiled 7 VHDL Units
+Built simulation executable C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb_isim_beh.exe
+Fuse Memory Usage: 34164 KB
+Fuse CPU Usage: 639 ms
