@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Reading design: TOP_LEVEL.prj
 
@@ -110,34 +110,41 @@ Cores Search Directories           : {"../ipcore_dir"  }
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/fadc_params_package.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/fadc_params_package.vhd" in Library work.
 Architecture fadc_params_package of Entity fadc_params_package is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/fadc_mem.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/fadc_mem.vhd" in Library work.
 Architecture fadc_mem_a of Entity fadc_mem is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/VERSION_BLK.vhd" in Library work.
 Architecture behavioral of Entity version_blk is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/MUX64_8.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/MUX64_8.vhd" in Library work.
 Architecture behavioral of Entity mux64_8 is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/FADC_WRITE_CTRL.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/FADC_WRITE_CTRL.vhd" in Library work.
 Architecture behavioral of Entity fadc_write_ctrl is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/buffer_10bit.vhd" in Library work.
 Architecture behavioral of Entity buffer_10bit is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/trigger_recv_blk.vhd" in Library work.
 Architecture behavioral of Entity trigger_recv_blk is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send.vhd" in Library work.
-Entity <data_send> compiled.
-Entity <data_send> (Architecture <behavioral>) compiled.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/data_send.vhd" in Library work.
+Architecture behavioral of Entity data_send is up to date.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/Pulser.vhd" in Library work.
+Architecture behavioral of Entity pulser is up to date.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/reset_tester.vhd" in Library work.
+Architecture behavioral of Entity reset_tester is up to date.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/ipcore_dir/INFO_FIFO_0.vhd" in Library work.
 Architecture info_fifo_0_a of Entity info_fifo_0 is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/ipcore_dir/DATA_FIFO_0.vhd" in Library work.
 Architecture data_fifo_0_a of Entity data_fifo_0 is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/ipcore_dir/ADDR_FIFO.vhd" in Library work.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/ipcore_dir/ADDR_FIFO.vhd" in Library work.
 Architecture addr_fifo_a of Entity addr_fifo is up to date.
-Compiling vhdl file "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
-Architecture behavioral of Entity m2_1_mxilinx_top_level is up to date.
-Architecture behavioral of Entity fd16re_mxilinx_top_level is up to date.
-Architecture behavioral of Entity d4_16e_mxilinx_top_level is up to date.
-Architecture behavioral of Entity top_level is up to date.
+Compiling vhdl file "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" in Library work.
+Entity <m2_1_mxilinx_top_level> compiled.
+Entity <m2_1_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <fd16re_mxilinx_top_level> compiled.
+Entity <fd16re_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <d4_16e_mxilinx_top_level> compiled.
+Entity <d4_16e_mxilinx_top_level> (Architecture <behavioral>) compiled.
+Entity <top_level> compiled.
+Entity <top_level> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -163,6 +170,10 @@ Analyzing hierarchy for entity <trigger_recv_blk> in library <work> (architectur
 Analyzing hierarchy for entity <ethernet_interface> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <data_send> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Pulser> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <reset_tester> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <ethernet_controller_wrapper> in library <work> (architecture <arch>).
 
@@ -219,10 +230,10 @@ Analyzing hierarchy for entity <user_addrs_mux> in library <work> (architecture 
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <TOP_LEVEL> in library <work> (Architecture <behavioral>).
-WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1038: Instantiating black box module <fadc_mem>.
-WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1047: Instantiating black box module <fadc_mem>.
-WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1056: Instantiating black box module <fadc_mem>.
-WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1065: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1057: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1066: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1075: Instantiating black box module <fadc_mem>.
+WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1084: Instantiating black box module <fadc_mem>.
     Set user-defined property "IOBDELAY_TYPE =  VARIABLE" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "IOBDELAY_VALUE =  0" for instance <XLXI_3405> in unit <TOP_LEVEL>.
     Set user-defined property "CLKDV_DIVIDE =  2.0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
@@ -241,16 +252,16 @@ WARNING:Xst:2211 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL
     Set user-defined property "FACTORY_JF =  F0F0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_3410> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_3410> in unit <TOP_LEVEL>.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D5' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
-WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" line 1119: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D10' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D11' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D12' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D13' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D14' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D15' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D5' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D6' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D8' of component 'D4_16E_MXILINX_TOP_LEVEL'.
+WARNING:Xst:753 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" line 1138: Unconnected output port 'D9' of component 'D4_16E_MXILINX_TOP_LEVEL'.
     Set user-defined property "HU_SET =  XLXI_3432_0" for instance <XLXI_3432> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_4136> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_4136> in unit <TOP_LEVEL>.
@@ -477,9 +488,6 @@ WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6163> in unit <TOP_LEVEL>.
     Set user-defined property "DIFF_TERM =  TRUE" for instance <XLXI_6163> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6163> in unit <TOP_LEVEL>.
-    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6164> in unit <TOP_LEVEL>.
-    Set user-defined property "DIFF_TERM =  TRUE" for instance <XLXI_6164> in unit <TOP_LEVEL>.
-    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6164> in unit <TOP_LEVEL>.
     Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6165> in unit <TOP_LEVEL>.
     Set user-defined property "DIFF_TERM =  TRUE" for instance <XLXI_6165> in unit <TOP_LEVEL>.
     Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6165> in unit <TOP_LEVEL>.
@@ -556,6 +564,34 @@ WARNING:Xst:753 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.
     Set user-defined property "PHASE_SHIFT =  0" for instance <XLXI_6199> in unit <TOP_LEVEL>.
     Set user-defined property "STARTUP_WAIT =  FALSE" for instance <XLXI_6199> in unit <TOP_LEVEL>.
     Set user-defined property "INIT =  0" for instance <XLXI_6226> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6235> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6235> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6235> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6235> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6236> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6236> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6236> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6236> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6237> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6237> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6237> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6237> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6238> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6238> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6238> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6238> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6242> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6242> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6242> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6242> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6243> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6243> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6243> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6243> in unit <TOP_LEVEL>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <XLXI_6244> in unit <TOP_LEVEL>.
+    Set user-defined property "DRIVE =  12" for instance <XLXI_6244> in unit <TOP_LEVEL>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <XLXI_6244> in unit <TOP_LEVEL>.
+    Set user-defined property "SLEW =  SLOW" for instance <XLXI_6244> in unit <TOP_LEVEL>.
 Entity <TOP_LEVEL> analyzed. Unit <TOP_LEVEL> generated.
 
 Analyzing Entity <D4_16E_MXILINX_TOP_LEVEL> in library <work> (Architecture <behavioral>).
@@ -720,9 +756,15 @@ Analyzing Entity <reset_mgr> in library <work> (Architecture <Behavioral>).
 Entity <reset_mgr> analyzed. Unit <reset_mgr> generated.
 
 Analyzing Entity <data_send> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send.vhd" line 39: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/data_send.vhd" line 39: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <rst>
 Entity <data_send> analyzed. Unit <data_send> generated.
+
+Analyzing Entity <Pulser> in library <work> (Architecture <behavioral>).
+Entity <Pulser> analyzed. Unit <Pulser> generated.
+
+Analyzing Entity <reset_tester> in library <work> (Architecture <behavioral>).
+Entity <reset_tester> analyzed. Unit <reset_tester> generated.
 
 
 =========================================================================
@@ -736,12 +778,12 @@ INFO:Xst:2679 - Register <internal_dout_50$mux0008> in unit <ethernet_interface>
 INFO:Xst:2679 - Register <internal_eth_dout_50$mux0008> in unit <ethernet_interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
 
 Synthesizing Unit <VERSION_BLK>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/VERSION_BLK.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/VERSION_BLK.vhd".
 Unit <VERSION_BLK> synthesized.
 
 
 Synthesizing Unit <MUX64_8>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/MUX64_8.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/MUX64_8.vhd".
     Found 64-bit 8-to-1 multiplexer for signal <muxout>.
     Summary:
 	inferred  64 Multiplexer(s).
@@ -749,7 +791,7 @@ Unit <MUX64_8> synthesized.
 
 
 Synthesizing Unit <FADC_WRITE_CTRL>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/FADC_WRITE_CTRL.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/FADC_WRITE_CTRL.vhd".
     Found 1-bit register for signal <we_fall>.
     Found 1-bit register for signal <actually_ready>.
     Found 10-bit register for signal <cnt>.
@@ -771,12 +813,12 @@ Unit <FADC_WRITE_CTRL> synthesized.
 
 
 Synthesizing Unit <buffer_10bit>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/buffer_10bit.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/buffer_10bit.vhd".
 Unit <buffer_10bit> synthesized.
 
 
 Synthesizing Unit <trigger_recv_blk>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/trigger_recv_blk.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/trigger_recv_blk.vhd".
     Found 1-bit register for signal <trig>.
     Found 32-bit up counter for signal <cnt_sig>.
     Found 1-bit register for signal <trig_in>.
@@ -788,7 +830,7 @@ Unit <trigger_recv_blk> synthesized.
 
 
 Synthesizing Unit <data_send>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send.vhd".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/data_send.vhd".
     Found 1-bit register for signal <b_data_we>.
     Found 3-bit up counter for signal <counter>.
     Found 64-bit up counter for signal <data>.
@@ -796,6 +838,19 @@ Synthesizing Unit <data_send>.
 	inferred   2 Counter(s).
 	inferred   1 D-type flip-flop(s).
 Unit <data_send> synthesized.
+
+
+Synthesizing Unit <Pulser>.
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/Pulser.vhd".
+    Found 27-bit up counter for signal <temp>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Pulser> synthesized.
+
+
+Synthesizing Unit <reset_tester>.
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/reset_tester.vhd".
+Unit <reset_tester> synthesized.
 
 
 Synthesizing Unit <burst_traffic_controller>.
@@ -1418,17 +1473,17 @@ Unit <tx_seq_ctl> synthesized.
 
 
 Synthesizing Unit <D4_16E_MXILINX_TOP_LEVEL>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <D4_16E_MXILINX_TOP_LEVEL> synthesized.
 
 
 Synthesizing Unit <M2_1_MXILINX_TOP_LEVEL>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <M2_1_MXILINX_TOP_LEVEL> synthesized.
 
 
 Synthesizing Unit <FD16RE_MXILINX_TOP_LEVEL>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf".
 Unit <FD16RE_MXILINX_TOP_LEVEL> synthesized.
 
 
@@ -1524,7 +1579,7 @@ Unit <ethernet_interface> synthesized.
 
 
 Synthesizing Unit <TOP_LEVEL>.
-    Related source file is "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf".
+    Related source file is "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf".
 WARNING:Xst:653 - Signal <trig_debug<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value 00000000000000000000000000000000.
 WARNING:Xst:646 - Signal <rx_data<63:25>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <rx_data<23:16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1544,6 +1599,7 @@ WARNING:Xst:653 - Signal <fadc_debug<55:53>> is used but never assigned. This so
 WARNING:Xst:653 - Signal <fadc_debug<51:34>> is used but never assigned. This sourceless signal will be automatically connected to value 000000000000000000.
 WARNING:Xst:653 - Signal <fadc_debug<23:22>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
 WARNING:Xst:653 - Signal <fadc_debug<11:10>> is used but never assigned. This sourceless signal will be automatically connected to value 00.
+WARNING:Xst:653 - Signal <fadc_data_in<8>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
 WARNING:Xst:646 - Signal <fadc_ctrl_data<13>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <fadc_b_data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <clock_5mhz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -1573,10 +1629,11 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 15
+# Counters                                             : 16
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
+ 27-bit up counter                                     : 1
  3-bit up counter                                      : 2
  32-bit up counter                                     : 1
  34-bit up counter                                     : 1
@@ -2032,10 +2089,11 @@ Macro Statistics
  64-bit adder                                          : 1
  8-bit adder                                           : 4
  8-bit subtractor                                      : 2
-# Counters                                             : 15
+# Counters                                             : 16
  10-bit up counter                                     : 2
  16-bit up counter                                     : 1
  2-bit down counter                                    : 1
+ 27-bit up counter                                     : 1
  3-bit up counter                                      : 2
  32-bit up counter                                     : 1
  34-bit up counter                                     : 1
@@ -2090,6 +2148,7 @@ WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <test_data_7> (witho
 WARNING:Xst:1710 - FF/Latch <test_data_0> (without init value) has a constant value of 0 in block <create_packet>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <internal_eth_dout_48> (without init value) has a constant value of 0 in block <ethernet_interface>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <rdy_for_trig_old> (without init value) has a constant value of 0 in block <FADC_WRITE_CTRL>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2146 - In block <TOP_LEVEL>, Counter <XLXI_6232/temp> <XLXI_6229/counter> are equivalent, XST will keep only <XLXI_6232/temp>.
 WARNING:Xst:1710 - FF/Latch <tx_data_count_0> (without init value) has a constant value of 0 in block <tx_seq_ctl>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <user_tx_size_in_0> (without init value) has a constant value of 0 in block <tx_seq_ctl>. This FF/Latch will be trimmed during the optimization process.
 INFO:Xst:1901 - Instance XLXI_3410 in unit TOP_LEVEL of type DCM_BASE has been replaced by DCM_ADV
@@ -2347,7 +2406,7 @@ WARNING:Xst:2677 - Node <XLXI_6227/data_manager_blk/RAM_COMM_DEC/ram_wdata_48> o
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 27.
+Found area constraint ratio of 100 (+ 5) on block TOP_LEVEL, actual ratio is 28.
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.wr/gwss.wsts/ram_full_fb_i> 
 INFO:Xst:2260 - The FF/Latch <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_fb_i> in Unit <BU2> is equivalent to the following FF/Latch : <U0/grf.rf/gl0.rd/grss.rsts/ram_empty_i> 
@@ -2463,8 +2522,8 @@ Unit <TOP_LEVEL> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 1589
- Flip-Flops                                            : 1589
+# Registers                                            : 1613
+ Flip-Flops                                            : 1613
 # Shift Registers                                      : 8
  44-bit shift register                                 : 8
 
@@ -2492,10 +2551,10 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 109
+# IOs                              : 110
 
 Cell Usage :
-# BELS                             : 5510
+# BELS                             : 5587
 #      AND2                        : 5
 #      AND2B1                      : 4
 #      AND5                        : 1
@@ -2506,30 +2565,30 @@ Cell Usage :
 #      BUF                         : 3
 #      GND                         : 11
 #      INV                         : 145
-#      LUT1                        : 268
-#      LUT2                        : 352
-#      LUT2_D                      : 24
+#      LUT1                        : 294
+#      LUT2                        : 354
+#      LUT2_D                      : 21
 #      LUT2_L                      : 8
-#      LUT3                        : 910
+#      LUT3                        : 909
 #      LUT3_D                      : 28
 #      LUT3_L                      : 80
-#      LUT4                        : 2086
-#      LUT4_D                      : 101
-#      LUT4_L                      : 288
-#      MUXCY                       : 586
+#      LUT4                        : 2092
+#      LUT4_D                      : 100
+#      LUT4_L                      : 283
+#      MUXCY                       : 612
 #      MUXF5                       : 148
 #      OR2                         : 3
 #      VCC                         : 11
 #      XOR2                        : 2
-#      XORCY                       : 431
-# FlipFlops/Latches                : 2069
+#      XORCY                       : 458
+# FlipFlops/Latches                : 2093
 #      FD                          : 158
 #      FDC                         : 48
 #      FDCE                        : 96
 #      FDE                         : 442
 #      FDP                         : 18
 #      FDPE                        : 6
-#      FDR                         : 102
+#      FDR                         : 126
 #      FDRE                        : 1008
 #      FDRE_1                      : 1
 #      FDRS                        : 63
@@ -2544,12 +2603,12 @@ Cell Usage :
 #      SRLC16E                     : 16
 # Clock Buffers                    : 12
 #      BUFG                        : 12
-# IO Buffers                       : 72
+# IO Buffers                       : 78
 #      IBUF                        : 10
-#      IBUFDS                      : 36
+#      IBUFDS                      : 35
 #      IBUFG                       : 2
 #      IBUFGDS                     : 1
-#      OBUF                        : 23
+#      OBUF                        : 30
 # DCM_ADVs                         : 5
 #      DCM_ADV                     : 5
 # Others                           : 2
@@ -2562,14 +2621,14 @@ Device utilization summary:
 
 Selected Device : 4vlx25ff668-10 
 
- Number of Slices:                     2775  out of  10752    25%  
- Number of Slice Flip Flops:           2069  out of  21504     9%  
- Number of 4 input LUTs:               4698  out of  21504    21%  
-    Number used as logic:              4290
+ Number of Slices:                     2788  out of  10752    25%  
+ Number of Slice Flip Flops:           2093  out of  21504     9%  
+ Number of 4 input LUTs:               4722  out of  21504    21%  
+    Number used as logic:              4314
     Number used as Shift registers:      24
     Number used as RAMs:                384
- Number of IOs:                         109
- Number of bonded IOBs:                 109  out of    448    24%  
+ Number of IOs:                         110
+ Number of bonded IOBs:                 110  out of    448    24%  
  Number of FIFO16/RAMB16s:               13  out of     72    18%  
     Number used as RAMB16s:              13
  Number of GCLKs:                        12  out of     32    37%  
@@ -2597,7 +2656,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
 BUSBHS_02DP_04S                    | XLXI_6199:CLK0         | 29    |
-GEL_RXCLK                          | IBUFG+BUFG             | 2273  |
+GEL_RXCLK                          | IBUFG+BUFG             | 2297  |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -2621,9 +2680,9 @@ Timing Summary:
 ---------------
 Speed Grade: -10
 
-   Minimum period: 8.626ns (Maximum Frequency: 115.926MHz)
+   Minimum period: 8.728ns (Maximum Frequency: 114.576MHz)
    Minimum input arrival time before clock: 6.512ns
-   Maximum output required time after clock: 4.694ns
+   Maximum output required time after clock: 7.059ns
    Maximum combinational path delay: 5.297ns
 
 Timing Detail:
@@ -2703,10 +2762,10 @@ Delay:               4.843ns (Levels of Logic = 5)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDRE:C->Q             5   0.360   0.764  XLXI_6047/cnt_1 (XLXI_6047/cnt_1)
-     LUT4_D:I0->LO         1   0.195   0.163  XLXI_6047/cnt_mux0001<5>11 (N1577)
+     LUT4_D:I0->LO         1   0.195   0.163  XLXI_6047/cnt_mux0001<5>11 (N1572)
      LUT3:I2->O            3   0.195   0.538  XLXI_6047/cnt_mux0001<3>11 (XLXI_6047/N5)
-     LUT3_D:I2->LO         1   0.195   0.328  XLXI_6047/cnt_mux0001<1>11 (N1576)
-     LUT4:I1->O            1   0.195   0.688  XLXI_6047/cnt_not0001_SW0 (N205)
+     LUT3_D:I2->LO         1   0.195   0.328  XLXI_6047/cnt_mux0001<1>11 (N1571)
+     LUT4:I1->O            1   0.195   0.688  XLXI_6047/cnt_not0001_SW0 (N202)
      LUT4:I1->O           10   0.195   0.488  XLXI_6047/cnt_not0001 (XLXI_6047/cnt_not0001)
      FDRE:CE                   0.540          XLXI_6047/cnt_0
     ----------------------------------------
@@ -2715,10 +2774,10 @@ Delay:               4.843ns (Levels of Logic = 5)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'GEL_RXCLK'
-  Clock period: 8.626ns (frequency: 115.926MHz)
-  Total number of paths / destination ports: 102292 / 7351
+  Clock period: 8.728ns (frequency: 114.576MHz)
+  Total number of paths / destination ports: 102688 / 7399
 -------------------------------------------------------------------------
-Delay:               4.313ns (Levels of Logic = 1)
+Delay:               4.364ns (Levels of Logic = 1)
   Source:            XLXI_6227/reset_mgr/reset (FF)
   Destination:       XLXI_6229/b_data_we (FF)
   Source Clock:      GEL_RXCLK rising
@@ -2728,16 +2787,16 @@ Delay:               4.313ns (Levels of Logic = 1)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q            484   0.360   2.858  XLXI_6227/reset_mgr/reset (XLXI_6227/reset_mgr/reset)
+     FDS:C->Q            497   0.360   2.909  XLXI_6227/reset_mgr/reset (XLXI_6227/reset_mgr/reset)
      LUT4:I3->O            1   0.195   0.360  XLXI_6229/b_data_we_and00001 (XLXI_6229/b_data_we_and0000)
      FDRE_1:CE                 0.540          XLXI_6229/b_data_we
     ----------------------------------------
-    Total                      4.313ns (1.095ns logic, 3.218ns route)
-                                       (25.4% logic, 74.6% route)
+    Total                      4.364ns (1.095ns logic, 3.269ns route)
+                                       (25.1% logic, 74.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'BUSBHS_02DP_04S'
-  Total number of paths / destination ports: 64 / 32
+  Total number of paths / destination ports: 62 / 31
 -------------------------------------------------------------------------
 Offset:              1.555ns (Levels of Logic = 2)
   Source:            BUSB_00DP_00S (PAD)
@@ -2769,11 +2828,11 @@ Offset:              6.512ns (Levels of Logic = 8)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             6   0.965   0.725  XLXI_4217 (GMII_RXD_0_sig<4>)
-     LUT3:I0->O            1   0.195   0.523  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/is_arp_sig_mux0000112_SW0 (N692)
-     LUT4_D:I3->LO         1   0.195   0.328  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6-In212 (N1667)
-     LUT3:I0->O            2   0.195   0.602  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_cmp_eq0002_SW2 (N624)
+     LUT3:I0->O            1   0.195   0.523  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/is_arp_sig_mux0000112_SW0 (N689)
+     LUT4_D:I3->LO         1   0.195   0.328  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd6-In212 (N1661)
+     LUT3:I0->O            2   0.195   0.602  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_cmp_eq0002_SW2 (N621)
      LUT4:I2->O            2   0.195   0.377  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In4111 (XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/N74)
-     MUXF5:S->O            1   0.527   0.585  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In404_SW0 (N628)
+     MUXF5:S->O            1   0.527   0.585  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In404_SW0 (N625)
      LUT4:I2->O            1   0.195   0.688  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In404 (XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In404)
      LUT4:I1->O            1   0.195   0.000  XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In432 (XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7-In)
      FDRE:D                    0.022          XLXI_6227/ec_wrapper/ethernet_controller/DecipherBlock/Sreg0_FSM_FFd7
@@ -2783,22 +2842,22 @@ Offset:              6.512ns (Levels of Logic = 8)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'GEL_RXCLK'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 17 / 15
 -------------------------------------------------------------------------
-Offset:              4.694ns (Levels of Logic = 1)
-  Source:            XLXI_6185/trig (FF)
-  Destination:       INTERNAL_08DN_17S (PAD)
+Offset:              7.059ns (Levels of Logic = 1)
+  Source:            XLXI_6227/reset_mgr/reset_1 (FF)
+  Destination:       U10_1 (PAD)
   Source Clock:      GEL_RXCLK rising
 
-  Data Path: XLXI_6185/trig to INTERNAL_08DN_17S
+  Data Path: XLXI_6227/reset_mgr/reset_1 to U10_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDR:C->Q              2   0.360   0.377  XLXI_6185/trig (XLXI_6185/trig)
-     OBUF:I->O                 3.957          XLXI_6146 (INTERNAL_08DN_17S)
+     FDS:C->Q            496   0.360   2.742  XLXI_6227/reset_mgr/reset_1 (XLXI_6227/reset_mgr/reset_1)
+     OBUF:I->O                 3.957          XLXI_6243 (U10_1)
     ----------------------------------------
-    Total                      4.694ns (4.317ns logic, 0.377ns route)
-                                       (92.0% logic, 8.0% route)
+    Total                      7.059ns (4.317ns logic, 2.742ns route)
+                                       (61.2% logic, 38.8% route)
 
 =========================================================================
 Timing constraint: Default path analysis
@@ -2821,14 +2880,14 @@ Delay:               5.297ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 93.00 secs
-Total CPU time to Xst completion: 92.87 secs
+Total REAL time to Xst completion: 84.00 secs
+Total CPU time to Xst completion: 83.92 secs
  
 --> 
 
-Total memory usage is 650256 kilobytes
+Total memory usage is 709456 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :  332 (   0 filtered)
-Number of infos    :  120 (   0 filtered)
+Number of warnings :  333 (   0 filtered)
+Number of infos    :  121 (   0 filtered)
 

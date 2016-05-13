@@ -171,9 +171,6 @@
         <signal name="BUSA_09DP_18S" />
         <signal name="BUSA_09DN_19S" />
         <signal name="fadc_data_in(9)" />
-        <signal name="BUSA_08DP_16S" />
-        <signal name="BUSA_08DN_17S" />
-        <signal name="fadc_data_in(8)" />
         <signal name="BUSB_08DP_16S" />
         <signal name="BUSB_08DN_17S" />
         <signal name="fadc_data_in(23)" />
@@ -274,10 +271,20 @@
         <signal name="fadc_clk_in_reset" />
         <signal name="GMII_RXD_0_sig(7:0)" />
         <signal name="XLXN_15140" />
-        <signal name="b_enable" />
         <signal name="PHY_TXD_sig(7:0)" />
         <signal name="rx_data(63:0)" />
         <signal name="rx_addr(31:0)" />
+        <signal name="XLXN_15142" />
+        <signal name="b_enable">
+        </signal>
+        <signal name="XLXN_15151" />
+        <signal name="XLXN_15152" />
+        <signal name="XLXN_15153" />
+        <signal name="XLXN_15154" />
+        <signal name="XLXN_15166" />
+        <signal name="U10_3" />
+        <signal name="U10_1" />
+        <signal name="U10_2" />
         <port polarity="Input" name="BUSC_16DP_32S" />
         <port polarity="Input" name="SECONDARY_CLK" />
         <port polarity="Output" name="BUSC_25DN_51S" />
@@ -335,8 +342,6 @@
         <port polarity="Input" name="BUSA_10DP_20S" />
         <port polarity="Input" name="BUSA_09DP_18S" />
         <port polarity="Input" name="BUSA_09DN_19S" />
-        <port polarity="Input" name="BUSA_08DP_16S" />
-        <port polarity="Input" name="BUSA_08DN_17S" />
         <port polarity="Input" name="BUSB_08DP_16S" />
         <port polarity="Input" name="BUSB_08DN_17S" />
         <port polarity="Input" name="BUSB_09DP_18S" />
@@ -387,6 +392,9 @@
         <port polarity="Output" name="BUSDD_02DP_04S" />
         <port polarity="Output" name="BUSDD_01DP_02S" />
         <port polarity="Output" name="BUSDD_00DP_00S" />
+        <port polarity="Output" name="U10_3" />
+        <port polarity="Output" name="U10_1" />
+        <port polarity="Output" name="U10_2" />
         <blockdef name="ibufg">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="0" y2="-64" x1="64" />
@@ -711,6 +719,22 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
+        <blockdef name="Pulser">
+            <timestamp>2016-5-11T16:40:26</timestamp>
+            <rect width="256" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+        </blockdef>
+        <blockdef name="reset_tester">
+            <timestamp>2016-5-11T17:13:44</timestamp>
+            <rect width="256" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <block symbolname="ibuf" name="XLXI_4248">
@@ -1407,20 +1431,6 @@
             <blockpin signalname="BUSA_09DN_19S" name="IB" />
             <blockpin signalname="fadc_data_in(9)" name="O" />
         </block>
-        <block symbolname="ibufds" name="XLXI_6164">
-            <attr value="TRUE" name="DIFF_TERM">
-                <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 gm:1nosynth wa:1 wd:1" />
-                <trait valuetype="Boolean" />
-            </attr>
-            <attr value="DONT_CARE" name="CAPACITANCE">
-                <trait verilog="all:0 wsynop:1 wsynth:1" />
-                <trait vhdl="all:0 wa:1 wd:1" />
-            </attr>
-            <blockpin signalname="BUSA_08DP_16S" name="I" />
-            <blockpin signalname="BUSA_08DN_17S" name="IB" />
-            <blockpin signalname="fadc_data_in(8)" name="O" />
-        </block>
         <block symbolname="ibufds" name="XLXI_6165">
             <attr value="TRUE" name="DIFF_TERM">
                 <trait verilog="all:0 dp:1nosynth wsynop:1 wsynth:1" />
@@ -1902,6 +1912,46 @@
             <blockpin signalname="b_data_we" name="b_data_we" />
             <blockpin signalname="b_data(63:0)" name="b_data(63:0)" />
         </block>
+        <block symbolname="Pulser" name="XLXI_6232">
+            <blockpin signalname="MASTER_CLK" name="clk" />
+            <blockpin signalname="reset" name="rst" />
+            <blockpin signalname="XLXN_15166" name="pulse" />
+        </block>
+        <block symbolname="reset_tester" name="XLXI_6234">
+            <blockpin signalname="reset" name="rst" />
+            <blockpin signalname="XLXN_15151" name="low" />
+            <blockpin signalname="XLXN_15152" name="high" />
+            <blockpin signalname="XLXN_15153" name="unknown" />
+            <blockpin signalname="XLXN_15154" name="unconnected" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6235">
+            <blockpin signalname="XLXN_15151" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6236">
+            <blockpin signalname="XLXN_15152" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6237">
+            <blockpin signalname="XLXN_15153" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6238">
+            <blockpin signalname="XLXN_15154" name="I" />
+            <blockpin name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6242">
+            <blockpin signalname="XLXN_15166" name="I" />
+            <blockpin signalname="U10_3" name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6243">
+            <blockpin signalname="reset" name="I" />
+            <blockpin signalname="U10_1" name="O" />
+        </block>
+        <block symbolname="obuf" name="XLXI_6244">
+            <blockpin signalname="b_enable" name="I" />
+            <blockpin signalname="U10_2" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="7040" height="5440">
         <rect width="2260" x="424" y="276" height="1256" />
@@ -1992,8 +2042,7 @@
         </instance>
         <branch name="GMII_RXD_0_sig(7:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="1120" type="branch" />
-            <wire x2="848" y1="1120" y2="1120" x1="832" />
-            <wire x2="1264" y1="1120" y2="1120" x1="848" />
+            <wire x2="1264" y1="1120" y2="1120" x1="832" />
         </branch>
         <branch name="reset">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1872" y="672" type="branch" />
@@ -2001,8 +2050,7 @@
         </branch>
         <branch name="b_data_we">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="736" type="branch" />
-            <wire x2="1056" y1="736" y2="736" x1="1040" />
-            <wire x2="1264" y1="736" y2="736" x1="1056" />
+            <wire x2="1264" y1="736" y2="736" x1="1040" />
         </branch>
         <instance x="1056" y="608" name="XLXI_6228" orien="R90" />
         <branch name="XLXN_15140">
@@ -2014,70 +2062,51 @@
         </branch>
         <branch name="GMII_RX_DV_0_sig">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="864" type="branch" />
-            <wire x2="848" y1="864" y2="864" x1="832" />
-            <wire x2="1264" y1="864" y2="864" x1="848" />
+            <wire x2="1264" y1="864" y2="864" x1="832" />
         </branch>
         <branch name="GMII_RX_ER_0_sig">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="832" y="928" type="branch" />
-            <wire x2="848" y1="928" y2="928" x1="832" />
-            <wire x2="1264" y1="928" y2="928" x1="848" />
+            <wire x2="1264" y1="928" y2="928" x1="832" />
         </branch>
         <branch name="b_data(63:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="1056" type="branch" />
-            <wire x2="1056" y1="1056" y2="1056" x1="1040" />
-            <wire x2="1264" y1="1056" y2="1056" x1="1056" />
+            <wire x2="1264" y1="1056" y2="1056" x1="1040" />
         </branch>
         <branch name="tx_data(63:0)">
             <attrtext style="alignment:SOFT-RIGHT" attrname="Name" x="1040" y="992" type="branch" />
-            <wire x2="1056" y1="992" y2="992" x1="1040" />
-            <wire x2="1264" y1="992" y2="992" x1="1056" />
-        </branch>
-        <branch name="b_enable">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="800" type="branch" />
-            <wire x2="1952" y1="800" y2="800" x1="1728" />
+            <wire x2="1264" y1="992" y2="992" x1="1040" />
         </branch>
         <branch name="rx_wren">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="736" type="branch" />
-            <wire x2="1936" y1="736" y2="736" x1="1728" />
-            <wire x2="1952" y1="736" y2="736" x1="1936" />
+            <wire x2="1952" y1="736" y2="736" x1="1728" />
         </branch>
         <branch name="GTX_CLK_0_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="864" type="branch" />
-            <wire x2="2096" y1="864" y2="864" x1="1728" />
-            <wire x2="2112" y1="864" y2="864" x1="2096" />
+            <wire x2="2112" y1="864" y2="864" x1="1728" />
         </branch>
         <branch name="PHY_TXEN_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="928" type="branch" />
-            <wire x2="2096" y1="928" y2="928" x1="1728" />
-            <wire x2="2112" y1="928" y2="928" x1="2096" />
+            <wire x2="2112" y1="928" y2="928" x1="1728" />
         </branch>
         <branch name="PHY_TXER_sig">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="992" type="branch" />
-            <wire x2="2096" y1="992" y2="992" x1="1728" />
-            <wire x2="2112" y1="992" y2="992" x1="2096" />
+            <wire x2="2112" y1="992" y2="992" x1="1728" />
         </branch>
         <branch name="PHY_TXD_sig(7:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="2112" y="1184" type="branch" />
-            <wire x2="2096" y1="1184" y2="1184" x1="1728" />
-            <wire x2="2112" y1="1184" y2="1184" x1="2096" />
+            <wire x2="2112" y1="1184" y2="1184" x1="1728" />
         </branch>
         <branch name="rx_data(63:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="1120" type="branch" />
-            <wire x2="1936" y1="1120" y2="1120" x1="1728" />
-            <wire x2="1952" y1="1120" y2="1120" x1="1936" />
+            <wire x2="1952" y1="1120" y2="1120" x1="1728" />
         </branch>
         <branch name="rx_addr(31:0)">
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="1056" type="branch" />
-            <wire x2="1936" y1="1056" y2="1056" x1="1728" />
-            <wire x2="1952" y1="1056" y2="1056" x1="1936" />
+            <wire x2="1952" y1="1056" y2="1056" x1="1728" />
         </branch>
         <instance x="4112" y="3872" name="XLXI_3432" orien="R0" />
         <instance x="2448" y="1872" name="XLXI_6229" orien="R0">
         </instance>
-        <branch name="b_enable">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1712" type="branch" />
-            <wire x2="2448" y1="1712" y2="1712" x1="2256" />
-        </branch>
         <branch name="MASTER_CLK">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2256" y="1776" type="branch" />
             <wire x2="2448" y1="1776" y2="1776" x1="2256" />
@@ -2093,6 +2122,72 @@
         <branch name="b_data(63:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2992" y="1840" type="branch" />
             <wire x2="2992" y1="1840" y2="1840" x1="2832" />
+        </branch>
+        <branch name="b_enable">
+            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="1952" y="800" type="branch" />
+            <wire x2="1952" y1="800" y2="800" x1="1728" />
+        </branch>
+        <branch name="b_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1712" type="branch" />
+            <wire x2="2448" y1="1712" y2="1712" x1="2416" />
+        </branch>
+        <instance x="1408" y="2080" name="XLXI_6232" orien="R0">
+        </instance>
+        <branch name="MASTER_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1312" y="1984" type="branch" />
+            <wire x2="1408" y1="1984" y2="1984" x1="1312" />
+        </branch>
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1312" y="2048" type="branch" />
+            <wire x2="1408" y1="2048" y2="2048" x1="1312" />
+        </branch>
+        <instance x="2512" y="2480" name="XLXI_6234" orien="R0">
+        </instance>
+        <branch name="XLXN_15151">
+            <wire x2="2928" y1="2256" y2="2256" x1="2896" />
+        </branch>
+        <instance x="2928" y="2288" name="XLXI_6235" orien="R0" />
+        <branch name="XLXN_15152">
+            <wire x2="2928" y1="2320" y2="2320" x1="2896" />
+        </branch>
+        <instance x="2928" y="2352" name="XLXI_6236" orien="R0" />
+        <branch name="XLXN_15153">
+            <wire x2="2928" y1="2384" y2="2384" x1="2896" />
+        </branch>
+        <instance x="2928" y="2416" name="XLXI_6237" orien="R0" />
+        <branch name="XLXN_15154">
+            <wire x2="2928" y1="2448" y2="2448" x1="2896" />
+        </branch>
+        <instance x="2928" y="2480" name="XLXI_6238" orien="R0" />
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2400" y="2256" type="branch" />
+            <wire x2="2512" y1="2256" y2="2256" x1="2400" />
+        </branch>
+        <branch name="XLXN_15166">
+            <wire x2="1824" y1="1984" y2="1984" x1="1792" />
+        </branch>
+        <instance x="1824" y="2016" name="XLXI_6242" orien="R0" />
+        <branch name="U10_3">
+            <wire x2="2080" y1="1984" y2="1984" x1="2048" />
+        </branch>
+        <iomarker fontsize="28" x="2080" y="1984" name="U10_3" orien="R0" />
+        <instance x="1488" y="2240" name="XLXI_6243" orien="R0" />
+        <instance x="1488" y="2336" name="XLXI_6244" orien="R0" />
+        <branch name="U10_1">
+            <wire x2="1744" y1="2208" y2="2208" x1="1712" />
+        </branch>
+        <iomarker fontsize="28" x="1744" y="2208" name="U10_1" orien="R0" />
+        <branch name="U10_2">
+            <wire x2="1744" y1="2304" y2="2304" x1="1712" />
+        </branch>
+        <iomarker fontsize="28" x="1744" y="2304" name="U10_2" orien="R0" />
+        <branch name="reset">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="2208" type="branch" />
+            <wire x2="1488" y1="2208" y2="2208" x1="1408" />
+        </branch>
+        <branch name="b_enable">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="2304" type="branch" />
+            <wire x2="1488" y1="2304" y2="2304" x1="1408" />
         </branch>
     </sheet>
     <sheet sheetnum="2" width="7040" height="5440">
@@ -3148,16 +3243,6 @@
             <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4272" type="branch" />
             <wire x2="3696" y1="4272" y2="4272" x1="3616" />
         </branch>
-        <branch name="BUSA_08DP_16S">
-            <wire x2="3392" y1="4384" y2="4384" x1="3168" />
-        </branch>
-        <branch name="BUSA_08DN_17S">
-            <wire x2="3392" y1="4416" y2="4416" x1="3168" />
-        </branch>
-        <branch name="fadc_data_in(8)">
-            <attrtext style="alignment:SOFT-LEFT" attrname="Name" x="3696" y="4400" type="branch" />
-            <wire x2="3696" y1="4400" y2="4400" x1="3616" />
-        </branch>
         <text style="alignment:RIGHT;fontsize:44;fontname:Arial;textcolor:rgb(0,128,0)" x="2840" y="3924">DQ bus</text>
         <iomarker fontsize="28" x="3168" y="3488" name="BUSA_15DP_30S" orien="R180" />
         <iomarker fontsize="28" x="3168" y="3520" name="BUSA_15DN_31S" orien="R180" />
@@ -3173,8 +3258,6 @@
         <iomarker fontsize="28" x="3168" y="4160" name="BUSA_10DN_21S" orien="R180" />
         <iomarker fontsize="28" x="3168" y="4256" name="BUSA_09DP_18S" orien="R180" />
         <iomarker fontsize="28" x="3168" y="4288" name="BUSA_09DN_19S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4384" name="BUSA_08DP_16S" orien="R180" />
-        <iomarker fontsize="28" x="3168" y="4416" name="BUSA_08DN_17S" orien="R180" />
         <branch name="BUSB_08DP_16S">
             <wire x2="4736" y1="2320" y2="2320" x1="4512" />
         </branch>
@@ -3476,9 +3559,6 @@
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
         <instance x="3392" y="4304" name="XLXI_6163" orien="R0">
-            <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
-        </instance>
-        <instance x="3392" y="4432" name="XLXI_6164" orien="R0">
             <attrtext style="fontsize:28;fontname:Arial;displayformat:NAMEEQUALSVALUE" attrname="DIFF_TERM" x="0" y="-64" type="instance" />
         </instance>
         <instance x="4736" y="2368" name="XLXI_6165" orien="R0">

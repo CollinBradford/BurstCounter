@@ -2,17 +2,17 @@ Release 14.7 ngdbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
--intstyle ise -dd _ngo -sd ../ipcore_dir -nt timestamp -uc TOP_LEVEL.ucf -p
+-intstyle ise -dd _ngo -sd ../ipcore_dir -aul -nt timestamp -uc TOP_LEVEL.ucf -p
 xc4vlx25-ff668-10 TOP_LEVEL.ngc TOP_LEVEL.ngd
 
-Reading NGO file "C:/Users/Collin/Fermilab/Main Project
-1/GEL_CAPTAN/TOP_LEVEL.ngc" ...
-Loading design module "C:\Users\Collin\Fermilab\Main Project
-1\GEL_CAPTAN/fadc_mem.ngc"...
-Loading design module "C:\Users\Collin\Fermilab\Main Project
-1\GEL_CAPTAN/DATA_FIFO_0.ngc"...
-Loading design module "C:\Users\Collin\Fermilab\Main Project
-1\GEL_CAPTAN/INFO_FIFO_0.ngc"...
+Reading NGO file "C:/Users/Collin/Fermilab/BurstCounter/Main
+Project/GEL_CAPTAN/TOP_LEVEL.ngc" ...
+Loading design module "C:\Users\Collin\Fermilab\BurstCounter\Main
+Project\GEL_CAPTAN/fadc_mem.ngc"...
+Loading design module "C:\Users\Collin\Fermilab\BurstCounter\Main
+Project\GEL_CAPTAN/DATA_FIFO_0.ngc"...
+Loading design module "C:\Users\Collin\Fermilab\BurstCounter\Main
+Project\GEL_CAPTAN/INFO_FIFO_0.ngc"...
 Loading design module "../ipcore_dir/ADDR_FIFO.ngc"...
 Gathering constraint information from source properties...
 Done.
@@ -20,6 +20,36 @@ Done.
 Annotating constraints to design from ucf file "TOP_LEVEL.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_08DP_16S"LOC = E6;>
+   [TOP_LEVEL.ucf(317)]: NET "BUSA_08DP_16S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_08DP_16S"LOC = E6;> [TOP_LEVEL.ucf(317)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_08DP_16S" IOSTANDARD =
+   LVDS_25;> [TOP_LEVEL.ucf(318)]: INST "BUSA_08DP_16S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+INFO:ConstraintSystem:59 - Constraint <NET "BUSA_08DN_17S"LOC = E5;>
+   [TOP_LEVEL.ucf(319)]: NET "BUSA_08DN_17S" not found.  Please verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
+WARNING:ConstraintSystem - A target design object for the Locate constraint
+   '<NET "BUSA_08DN_17S"LOC = E5;> [TOP_LEVEL.ucf(319)]' could not be found and
+   so the Locate constraint will be removed.
+
+INFO:ConstraintSystem:59 - Constraint <INST "BUSA_08DN_17S" IOSTANDARD =
+   LVCMOS25;> [TOP_LEVEL.ucf(320)]: INST "BUSA_08DN_17S" not found.  Please
+   verify that:
+   1. The specified design element actually exists in the original design.
+   2. The specified object is spelled correctly in the constraint source file.
+
 WARNING:ConstraintSystem:137 - Constraint <NET "SECONDARY_CLK" TNM_NET =
    SECONDARY_CLK;> [TOP_LEVEL.ucf(944)]: No appropriate instances for the TNM
    constraint are driven by "SECONDARY_CLK".
@@ -132,12 +162,12 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  13
+  Number of warnings:  15
 
-Total memory usage is 217320 kilobytes
+Total memory usage is 216808 kilobytes
 
 Writing NGD file "TOP_LEVEL.ngd" ...
-Total REAL time to NGDBUILD completion:  9 sec
+Total REAL time to NGDBUILD completion:  8 sec
 Total CPU time to NGDBUILD completion:   8 sec
 
 Writing NGDBUILD log file "TOP_LEVEL.bld"...

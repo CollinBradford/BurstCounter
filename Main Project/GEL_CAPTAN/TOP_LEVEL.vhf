@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 05/05/2016 16:08:21
+-- /___/   /\     Timestamp : 05/11/2016 14:09:12
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath "C:/Users/Collin/Fermilab/Main Project 1/ipcore_dir" -intstyle ise -family virtex4 -flat -suppress -vhdl "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.vhf" -w "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/TOP_LEVEL.sch"
+--Command: sch2hdl -sympath "C:/Users/Collin/Fermilab/BurstCounter/Main Project/ipcore_dir" -intstyle ise -family virtex4 -flat -suppress -vhdl "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" -w "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.sch"
 --Design Name: TOP_LEVEL
 --Device: virtex4
 --Purpose:
@@ -458,8 +458,6 @@ entity TOP_LEVEL is
           BUSA_06DP_12S     : in    std_logic; 
           BUSA_07DN_15S     : in    std_logic; 
           BUSA_07DP_14S     : in    std_logic; 
-          BUSA_08DN_17S     : in    std_logic; 
-          BUSA_08DP_16S     : in    std_logic; 
           BUSA_09DN_19S     : in    std_logic; 
           BUSA_09DP_18S     : in    std_logic; 
           BUSA_10DN_21S     : in    std_logic; 
@@ -550,7 +548,10 @@ entity TOP_LEVEL is
           GENERAL_12DN_25S  : out   std_logic; 
           GENERAL_12DP_24S  : out   std_logic; 
           INTERNAL_08DN_17S : out   std_logic; 
-          INTERNAL_08DP_16S : out   std_logic);
+          INTERNAL_08DP_16S : out   std_logic; 
+          U10_1             : out   std_logic; 
+          U10_2             : out   std_logic; 
+          U10_3             : out   std_logic);
 end TOP_LEVEL;
 
 architecture BEHAVIORAL of TOP_LEVEL is
@@ -664,6 +665,11 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15092               : std_logic;
    signal XLXN_15130               : std_logic;
    signal XLXN_15140               : std_logic;
+   signal XLXN_15151               : std_logic;
+   signal XLXN_15152               : std_logic;
+   signal XLXN_15153               : std_logic;
+   signal XLXN_15154               : std_logic;
+   signal XLXN_15166               : std_logic;
    signal XLXI_5338_in3_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal : std_logic_vector (63 downto 0);
@@ -967,6 +973,20 @@ architecture BEHAVIORAL of TOP_LEVEL is
              b_data    : out   std_logic_vector (63 downto 0));
    end component;
    
+   component Pulser
+      port ( clk   : in    std_logic; 
+             rst   : in    std_logic; 
+             pulse : out   std_logic);
+   end component;
+   
+   component reset_tester
+      port ( rst         : in    std_logic; 
+             low         : out   std_logic; 
+             high        : out   std_logic; 
+             unknown     : out   std_logic; 
+             unconnected : out   std_logic);
+   end component;
+   
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
    attribute CLKIN_PERIOD of XLXI_3410 : label is "8.0";
    attribute CLKFX_MULTIPLY of XLXI_3410 : label is "8";
@@ -1011,7 +1031,6 @@ architecture BEHAVIORAL of TOP_LEVEL is
    attribute DIFF_TERM of XLXI_6161 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6162 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6163 : label is "TRUE";
-   attribute DIFF_TERM of XLXI_6164 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6165 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6166 : label is "TRUE";
    attribute DIFF_TERM of XLXI_6167 : label is "TRUE";
@@ -1645,14 +1664,6 @@ begin
                 IB=>BUSA_09DN_19S,
                 O=>fadc_data_in(9));
    
-   XLXI_6164 : IBUFDS
-   -- synopsys translate_off
-   generic map( DIFF_TERM => TRUE)
-   -- synopsys translate_on
-      port map (I=>BUSA_08DP_16S,
-                IB=>BUSA_08DN_17S,
-                O=>fadc_data_in(8));
-   
    XLXI_6165 : IBUFDS
    -- synopsys translate_off
    generic map( DIFF_TERM => TRUE)
@@ -1896,6 +1907,46 @@ begin
                 rst=>reset,
                 b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we);
+   
+   XLXI_6232 : Pulser
+      port map (clk=>MASTER_CLK,
+                rst=>reset,
+                pulse=>XLXN_15166);
+   
+   XLXI_6234 : reset_tester
+      port map (rst=>reset,
+                high=>XLXN_15152,
+                low=>XLXN_15151,
+                unconnected=>XLXN_15154,
+                unknown=>XLXN_15153);
+   
+   XLXI_6235 : OBUF
+      port map (I=>XLXN_15151,
+                O=>open);
+   
+   XLXI_6236 : OBUF
+      port map (I=>XLXN_15152,
+                O=>open);
+   
+   XLXI_6237 : OBUF
+      port map (I=>XLXN_15153,
+                O=>open);
+   
+   XLXI_6238 : OBUF
+      port map (I=>XLXN_15154,
+                O=>open);
+   
+   XLXI_6242 : OBUF
+      port map (I=>XLXN_15166,
+                O=>U10_3);
+   
+   XLXI_6243 : OBUF
+      port map (I=>reset,
+                O=>U10_1);
+   
+   XLXI_6244 : OBUF
+      port map (I=>b_enable,
+                O=>U10_2);
    
 end BEHAVIORAL;
 

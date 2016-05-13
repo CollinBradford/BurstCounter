@@ -1,17 +1,17 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 05 18:24:18 2016
+Wed May 11 14:12:44 2016
 
 drc -z TOP_LEVEL.ncd TOP_LEVEL.pcf
 
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.
-   rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
+   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo
+   .rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.
-   rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.r
+   f/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The
    signal does not drive any load pins in the design.
@@ -92,10 +92,23 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D5> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/full> is incomplete. The signal
+   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
    not drive any load pins in the design.
@@ -112,10 +125,6 @@ WARNING:PhysDesignRules:367 - The signal
    f/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.
-   rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
@@ -125,30 +134,21 @@ WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo
-   .rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D10> is incomplete. The
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.
+   rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.r
-   f/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.
+   rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D5> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The
-   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_INFO_FIFO/full> is incomplete. The signal
-   does not drive any load pins in the design.
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.
+   rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_full_i> is incomplete. The
+   signal does not drive any load pins in the design.
 INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance
    with the CLKFX and CLKFX180 outputs of the DCM_ADV comp XLXI_3410, consult
    the device Data Sheet.
