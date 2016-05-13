@@ -1,0 +1,2 @@
+vhdtdtfi -lib work reset_tester.vhd -prj dig_mac -o reset_tester.spl -module reset_tester -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 reset_tester.spl {C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/reset_tester.sym} 

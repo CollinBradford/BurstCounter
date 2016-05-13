@@ -5,6 +5,32 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;BUSA_08DP_16S&quot;LOC = E6;&gt; [TOP_LEVEL.ucf(317)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">BUSA_08DP_16S</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;BUSA_08DP_16S&quot;LOC = E6;&gt; [TOP_LEVEL.ucf(317)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;INST &quot;BUSA_08DP_16S&quot; IOSTANDARD = LVDS_25;&gt; [TOP_LEVEL.ucf(318)]</arg>: <arg fmt="%s" index="2">INST</arg> &quot;<arg fmt="%s" index="3">BUSA_08DP_16S</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;BUSA_08DN_17S&quot;LOC = E5;&gt; [TOP_LEVEL.ucf(319)]</arg>: <arg fmt="%s" index="2">NET</arg> &quot;<arg fmt="%s" index="3">BUSA_08DN_17S</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >A target design object for the Locate constraint &apos;&lt;NET &quot;BUSA_08DN_17S&quot;LOC = E5;&gt; [TOP_LEVEL.ucf(319)]&apos; could not be found and so the Locate constraint will be removed.
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="59" delta="old" >Constraint <arg fmt="%s" index="1">&lt;INST &quot;BUSA_08DN_17S&quot; IOSTANDARD = LVCMOS25;&gt; [TOP_LEVEL.ucf(320)]</arg>: <arg fmt="%s" index="2">INST</arg> &quot;<arg fmt="%s" index="3">BUSA_08DN_17S</arg>&quot; not found.  Please verify that:
+1. The specified design element actually exists in the original design.
+2. The specified object is spelled correctly in the constraint source file.
+</msg>
+
 <msg type="warning" file="ConstraintSystem" num="137" delta="old" >Constraint <arg fmt="%s" index="1">&lt;NET &quot;SECONDARY_CLK&quot; TNM_NET = SECONDARY_CLK;&gt; [TOP_LEVEL.ucf(944)]</arg>: No appropriate instances for the TNM constraint are driven by &quot;<arg fmt="%s" index="2">SECONDARY_CLK</arg>&quot;.
 </msg>
 

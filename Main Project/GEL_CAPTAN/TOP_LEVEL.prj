@@ -1,6 +1,8 @@
 vhdl work "fadc_params_package.vhd"
 vhdl work "VERSION_BLK.vhd"
 vhdl work "trigger_recv_blk.vhd"
+vhdl work "reset_tester.vhd"
+vhdl work "Pulser.vhd"
 vhdl work "MUX64_8.vhd"
 vhdl work "FADC_WRITE_CTRL.vhd"
 vhdl work "fadc_mem.vhd"
