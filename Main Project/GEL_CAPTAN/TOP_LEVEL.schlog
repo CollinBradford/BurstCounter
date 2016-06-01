@@ -1,5 +1,0 @@
-select figure at 2157 2035 8 -wires -sn=1
-select all in 2157 2035 3306 2555 -wires -enclosed -sn=1
-select figure at 3226 2600 8 -wires -sn=1
-select all in 2070 2101 3226 2600 -wires -enclosed -sn=1
-select figure at 2078 2167 8 -wires -sn=1

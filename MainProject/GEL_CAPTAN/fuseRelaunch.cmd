@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb_isim_beh.exe" -prj "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb_beh.prj" "work.data_send_tb" 
