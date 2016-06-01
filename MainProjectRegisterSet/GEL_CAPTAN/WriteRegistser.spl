@@ -1,0 +1,10 @@
+[Inputs]
+rst
+clk
+rx_wren
+=rx_addr[31:0]=
+=rx_data[63:0]=
+[Outputs]
+user_ready
+=reg_out[15:0]=
+[BiDir]

@@ -1,0 +1,23 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_isim_beh.exe -prj D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_beh.prj work.WriteRegister_tb 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegistser.vhd" into library work
+Parsing VHDL file "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb.vhd" into library work
+Parsing VHDL file "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/../ipcore_dir/ADDR_FIFO.vhd" into library work
+Parsing VHDL file "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/../ipcore_dir/DATA_FIFO_0.vhd" into library work
+Parsing VHDL file "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/../ipcore_dir/INFO_FIFO_0.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package std_logic_arith
+Compiling architecture behavioral of entity WriteRegistser [writeregistser_default]
+Compiling architecture behavior of entity writeregister_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 VHDL Units
+Built simulation executable D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_isim_beh.exe
+Fuse Memory Usage: 36252 KB
+Fuse CPU Usage: 561 ms

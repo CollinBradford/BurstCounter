@@ -1,0 +1,10 @@
+[Inputs]
+clka
+clkb
+=wea[0:0]=
+=addra[9:0]=
+=dina[7:0]=
+=addrb[9:0]=
+[Outputs]
+=doutb[7:0]=
+[BiDir]

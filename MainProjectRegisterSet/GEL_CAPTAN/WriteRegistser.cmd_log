@@ -1,0 +1,4 @@
+vhdtdtfi -lib work WriteRegistser.vhd -prj dig_mac -o WriteRegistser.spl -module WriteRegistser -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 WriteRegistser.spl D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegistser.sym 
+vhdtdtfi -lib work WriteRegistser.vhd -prj dig_mac -o WriteRegistser.spl -module WriteRegistser -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 WriteRegistser.spl D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegistser.sym 

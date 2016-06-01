@@ -1,0 +1,5 @@
+set -tmpdir "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/xst"
+elaborate
+-ifn fadc_mem.prj
+-ifmt mixed

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="TOP_LEVEL">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-4-14T18:11:48</timestamp>
+    <pin polarity="Input" x="0" y="-5472" name="BUSC_16DP_32S" />
+    <pin polarity="Input" x="0" y="-5408" name="SECONDARY_CLK" />
+    <pin polarity="Input" x="0" y="-5344" name="BUSC_20DN_41S" />
+    <pin polarity="Input" x="0" y="-5280" name="BUSC_19DN_39S" />
+    <pin polarity="Input" x="0" y="-5216" name="BUSC_20DP_40S" />
+    <pin polarity="Input" x="0" y="-5152" name="BUSC_19DP_38S" />
+    <pin polarity="Input" x="0" y="-5088" name="BUSC_18DP_36S" />
+    <pin polarity="Input" x="0" y="-5024" name="BUSC_18DN_37S" />
+    <pin polarity="Input" x="0" y="-4960" name="BUSC_17DN_35S" />
+    <pin polarity="Input" x="0" y="-4896" name="BUSC_17DP_34S" />
+    <pin polarity="Input" x="0" y="-4832" name="BUSC_27DP_54S" />
+    <pin polarity="Input" x="0" y="-4768" name="GEL_RXCLK" />
+    <pin polarity="Input" x="0" y="-4704" name="BUSBHS_02DP_04S" />
+    <pin polarity="Input" x="0" y="-4640" name="BUSBHS_02DN_05S" />
+    <pin polarity="Input" x="0" y="-4576" name="BUSB_00DP_00S" />
+    <pin polarity="Input" x="0" y="-4512" name="BUSB_00DN_01S" />
+    <pin polarity="Input" x="0" y="-4448" name="BUSB_01DP_02S" />
+    <pin polarity="Input" x="0" y="-4384" name="BUSB_01DN_03S" />
+    <pin polarity="Input" x="0" y="-4320" name="BUSB_02DP_04S" />
+    <pin polarity="Input" x="0" y="-4256" name="BUSB_02DN_05S" />
+    <pin polarity="Input" x="0" y="-4192" name="BUSB_03DP_06S" />
+    <pin polarity="Input" x="0" y="-4128" name="BUSB_03DN_07S" />
+    <pin polarity="Input" x="0" y="-4064" name="BUSB_04DP_08S" />
+    <pin polarity="Input" x="0" y="-4000" name="BUSB_05DP_10S" />
+    <pin polarity="Input" x="0" y="-3936" name="BUSB_05DN_11S" />
+    <pin polarity="Input" x="0" y="-3872" name="BUSB_06DP_12S" />
+    <pin polarity="Input" x="0" y="-3808" name="BUSB_06DN_13S" />
+    <pin polarity="Input" x="0" y="-3744" name="BUSB_07DP_14S" />
+    <pin polarity="Input" x="0" y="-3680" name="BUSB_07DN_15S" />
+    <pin polarity="Input" x="0" y="-3616" name="BUSB_04DN_09S" />
+    <pin polarity="Input" x="0" y="-3552" name="BUSA_15DP_30S" />
+    <pin polarity="Input" x="0" y="-3488" name="BUSA_15DN_31S" />
+    <pin polarity="Input" x="0" y="-3424" name="BUSA_14DP_28S" />
+    <pin polarity="Input" x="0" y="-3360" name="BUSA_14DN_29S" />
+    <pin polarity="Input" x="0" y="-3296" name="BUSA_13DP_26S" />
+    <pin polarity="Input" x="0" y="-3232" name="BUSA_13DN_27S" />
+    <pin polarity="Input" x="0" y="-3168" name="BUSA_11DP_22S" />
+    <pin polarity="Input" x="0" y="-3104" name="BUSA_12DN_25S" />
+    <pin polarity="Input" x="0" y="-3040" name="BUSA_10DN_21S" />
+    <pin polarity="Input" x="0" y="-2976" name="BUSA_10DP_20S" />
+    <pin polarity="Input" x="0" y="-2912" name="BUSA_09DP_18S" />
+    <pin polarity="Input" x="0" y="-2848" name="BUSA_09DN_19S" />
+    <pin polarity="Input" x="0" y="-2784" name="BUSA_08DP_16S" />
+    <pin polarity="Input" x="0" y="-2720" name="BUSA_08DN_17S" />
+    <pin polarity="Input" x="0" y="-2656" name="BUSB_08DP_16S" />
+    <pin polarity="Input" x="0" y="-2592" name="BUSB_08DN_17S" />
+    <pin polarity="Input" x="0" y="-2528" name="BUSB_09DP_18S" />
+    <pin polarity="Input" x="0" y="-2464" name="BUSB_09DN_19S" />
+    <pin polarity="Input" x="0" y="-2400" name="BUSB_10DP_20S" />
+    <pin polarity="Input" x="0" y="-2336" name="BUSB_10DN_21S" />
+    <pin polarity="Input" x="0" y="-2272" name="BUSB_11DP_22S" />
+    <pin polarity="Input" x="0" y="-2208" name="BUSB_11DN_23S" />
+    <pin polarity="Input" x="0" y="-2144" name="BUSB_12DP_24S" />
+    <pin polarity="Input" x="0" y="-2080" name="BUSB_12DN_25S" />
+    <pin polarity="Input" x="0" y="-2016" name="BUSB_13DP_26S" />
+    <pin polarity="Input" x="0" y="-1952" name="BUSB_13DN_27S" />
+    <pin polarity="Input" x="0" y="-1888" name="BUSB_14DP_28S" />
+    <pin polarity="Input" x="0" y="-1824" name="BUSB_14DN_29S" />
+    <pin polarity="Input" x="0" y="-1760" name="BUSB_15DP_30S" />
+    <pin polarity="Input" x="0" y="-1696" name="BUSB_15DN_31S" />
+    <pin polarity="Input" x="0" y="-1632" name="BUSA_07DP_14S" />
+    <pin polarity="Input" x="0" y="-1568" name="BUSA_07DN_15S" />
+    <pin polarity="Input" x="0" y="-1504" name="BUSA_06DP_12S" />
+    <pin polarity="Input" x="0" y="-1440" name="BUSA_06DN_13S" />
+    <pin polarity="Input" x="0" y="-1376" name="BUSA_05DP_10S" />
+    <pin polarity="Input" x="0" y="-1312" name="BUSA_05DN_11S" />
+    <pin polarity="Input" x="0" y="-1248" name="BUSA_04DP_08S" />
+    <pin polarity="Input" x="0" y="-1184" name="BUSA_04DN_09S" />
+    <pin polarity="Input" x="0" y="-1120" name="BUSA_03DP_06S" />
+    <pin polarity="Input" x="0" y="-1056" name="BUSA_03DN_07S" />
+    <pin polarity="Input" x="0" y="-992" name="BUSA_02DP_04S" />
+    <pin polarity="Input" x="0" y="-928" name="BUSA_02DN_05S" />
+    <pin polarity="Input" x="0" y="-864" name="BUSA_01DP_02S" />
+    <pin polarity="Input" x="0" y="-800" name="BUSA_01DN_03S" />
+    <pin polarity="Input" x="0" y="-736" name="BUSA_00DP_00S" />
+    <pin polarity="Input" x="0" y="-672" name="BUSA_00DN_01S" />
+    <pin polarity="Input" x="0" y="-608" name="BUSA_11DN_23S" />
+    <pin polarity="Input" x="0" y="-544" name="BUSA_12DP_24S" />
+    <pin polarity="Input" x="0" y="-480" name="BUSA_30DP_60S" />
+    <pin polarity="Input" x="0" y="-416" name="BUSA_30DN_61S" />
+    <pin polarity="Input" x="0" y="-352" name="BUSA_29DP_58S" />
+    <pin polarity="Input" x="0" y="-288" name="BUSA_29DN_59S" />
+    <pin polarity="Input" x="0" y="-224" name="BUSA_28DP_56S" />
+    <pin polarity="Input" x="0" y="-160" name="BUSA_28DN_57S" />
+    <pin polarity="Input" x="0" y="-96" name="BUSA_26DP_52S" />
+    <pin polarity="Input" x="0" y="-32" name="BUSA_26DN_53S" />
+    <pin polarity="Output" x="592" y="-5472" name="BUSC_25DN_51S" />
+    <pin polarity="Output" x="592" y="-5232" name="BUSC_25DP_50S" />
+    <pin polarity="Output" x="592" y="-4992" name="BUSC_24DN_49S" />
+    <pin polarity="Output" x="592" y="-4752" name="BUSC_24DP_48S" />
+    <pin polarity="Output" x="592" y="-4512" name="BUSC_15DN_31S" />
+    <pin polarity="Output" x="592" y="-4272" name="BUSC_15DP_30S" />
+    <pin polarity="Output" x="592" y="-4032" name="BUSC_14DN_29S" />
+    <pin polarity="Output" x="592" y="-3792" name="BUSC_14DP_28S" />
+    <pin polarity="Output" x="592" y="-3552" name="BUSC_16DN_33S" />
+    <pin polarity="Output" x="592" y="-3312" name="BUSC_27DN_55S" />
+    <pin polarity="Output" x="592" y="-3072" name="BUSC_26DN_53S" />
+    <pin polarity="Output" x="592" y="-2832" name="GENERAL_12DP_24S" />
+    <pin polarity="Output" x="592" y="-2592" name="BUSBHS_03DP_06S" />
+    <pin polarity="Output" x="592" y="-2352" name="BUSBHS_03DN_07S" />
+    <pin polarity="Output" x="592" y="-2112" name="GENERAL_12DN_25S" />
+    <pin polarity="Output" x="592" y="-1872" name="INTERNAL_08DP_16S" />
+    <pin polarity="Output" x="592" y="-1632" name="INTERNAL_08DN_17S" />
+    <pin polarity="Output" x="592" y="-1392" name="BUSDD_05DP_10S" />
+    <pin polarity="Output" x="592" y="-1152" name="BUSDD_04DP_08S" />
+    <pin polarity="Output" x="592" y="-912" name="BUSDD_03DP_06S" />
+    <pin polarity="Output" x="592" y="-672" name="BUSDD_02DP_04S" />
+    <pin polarity="Output" x="592" y="-432" name="BUSDD_01DP_02S" />
+    <pin polarity="Output" x="592" y="-192" name="BUSDD_00DP_00S" />
+    <graph>
+        <rect width="464" x="64" y="-5504" height="5504" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="296" y="-5512" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5472" type="pin BUSC_16DP_32S" />
+        <line x2="0" y1="-5472" y2="-5472" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5408" type="pin SECONDARY_CLK" />
+        <line x2="0" y1="-5408" y2="-5408" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5344" type="pin BUSC_20DN_41S" />
+        <line x2="0" y1="-5344" y2="-5344" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5280" type="pin BUSC_19DN_39S" />
+        <line x2="0" y1="-5280" y2="-5280" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5216" type="pin BUSC_20DP_40S" />
+        <line x2="0" y1="-5216" y2="-5216" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5152" type="pin BUSC_19DP_38S" />
+        <line x2="0" y1="-5152" y2="-5152" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5088" type="pin BUSC_18DP_36S" />
+        <line x2="0" y1="-5088" y2="-5088" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-5024" type="pin BUSC_18DN_37S" />
+        <line x2="0" y1="-5024" y2="-5024" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4960" type="pin BUSC_17DN_35S" />
+        <line x2="0" y1="-4960" y2="-4960" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4896" type="pin BUSC_17DP_34S" />
+        <line x2="0" y1="-4896" y2="-4896" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4832" type="pin BUSC_27DP_54S" />
+        <line x2="0" y1="-4832" y2="-4832" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4768" type="pin GEL_RXCLK" />
+        <line x2="0" y1="-4768" y2="-4768" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4704" type="pin BUSBHS_02DP_04S" />
+        <line x2="0" y1="-4704" y2="-4704" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4640" type="pin BUSBHS_02DN_05S" />
+        <line x2="0" y1="-4640" y2="-4640" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4576" type="pin BUSB_00DP_00S" />
+        <line x2="0" y1="-4576" y2="-4576" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4512" type="pin BUSB_00DN_01S" />
+        <line x2="0" y1="-4512" y2="-4512" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4448" type="pin BUSB_01DP_02S" />
+        <line x2="0" y1="-4448" y2="-4448" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4384" type="pin BUSB_01DN_03S" />
+        <line x2="0" y1="-4384" y2="-4384" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4320" type="pin BUSB_02DP_04S" />
+        <line x2="0" y1="-4320" y2="-4320" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4256" type="pin BUSB_02DN_05S" />
+        <line x2="0" y1="-4256" y2="-4256" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4192" type="pin BUSB_03DP_06S" />
+        <line x2="0" y1="-4192" y2="-4192" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4128" type="pin BUSB_03DN_07S" />
+        <line x2="0" y1="-4128" y2="-4128" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4064" type="pin BUSB_04DP_08S" />
+        <line x2="0" y1="-4064" y2="-4064" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-4000" type="pin BUSB_05DP_10S" />
+        <line x2="0" y1="-4000" y2="-4000" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3936" type="pin BUSB_05DN_11S" />
+        <line x2="0" y1="-3936" y2="-3936" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3872" type="pin BUSB_06DP_12S" />
+        <line x2="0" y1="-3872" y2="-3872" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3808" type="pin BUSB_06DN_13S" />
+        <line x2="0" y1="-3808" y2="-3808" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3744" type="pin BUSB_07DP_14S" />
+        <line x2="0" y1="-3744" y2="-3744" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3680" type="pin BUSB_07DN_15S" />
+        <line x2="0" y1="-3680" y2="-3680" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3616" type="pin BUSB_04DN_09S" />
+        <line x2="0" y1="-3616" y2="-3616" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3552" type="pin BUSA_15DP_30S" />
+        <line x2="0" y1="-3552" y2="-3552" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3488" type="pin BUSA_15DN_31S" />
+        <line x2="0" y1="-3488" y2="-3488" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3424" type="pin BUSA_14DP_28S" />
+        <line x2="0" y1="-3424" y2="-3424" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3360" type="pin BUSA_14DN_29S" />
+        <line x2="0" y1="-3360" y2="-3360" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3296" type="pin BUSA_13DP_26S" />
+        <line x2="0" y1="-3296" y2="-3296" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3232" type="pin BUSA_13DN_27S" />
+        <line x2="0" y1="-3232" y2="-3232" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3168" type="pin BUSA_11DP_22S" />
+        <line x2="0" y1="-3168" y2="-3168" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3104" type="pin BUSA_12DN_25S" />
+        <line x2="0" y1="-3104" y2="-3104" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-3040" type="pin BUSA_10DN_21S" />
+        <line x2="0" y1="-3040" y2="-3040" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2976" type="pin BUSA_10DP_20S" />
+        <line x2="0" y1="-2976" y2="-2976" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2912" type="pin BUSA_09DP_18S" />
+        <line x2="0" y1="-2912" y2="-2912" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2848" type="pin BUSA_09DN_19S" />
+        <line x2="0" y1="-2848" y2="-2848" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2784" type="pin BUSA_08DP_16S" />
+        <line x2="0" y1="-2784" y2="-2784" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2720" type="pin BUSA_08DN_17S" />
+        <line x2="0" y1="-2720" y2="-2720" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2656" type="pin BUSB_08DP_16S" />
+        <line x2="0" y1="-2656" y2="-2656" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2592" type="pin BUSB_08DN_17S" />
+        <line x2="0" y1="-2592" y2="-2592" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2528" type="pin BUSB_09DP_18S" />
+        <line x2="0" y1="-2528" y2="-2528" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2464" type="pin BUSB_09DN_19S" />
+        <line x2="0" y1="-2464" y2="-2464" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2400" type="pin BUSB_10DP_20S" />
+        <line x2="0" y1="-2400" y2="-2400" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2336" type="pin BUSB_10DN_21S" />
+        <line x2="0" y1="-2336" y2="-2336" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2272" type="pin BUSB_11DP_22S" />
+        <line x2="0" y1="-2272" y2="-2272" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2208" type="pin BUSB_11DN_23S" />
+        <line x2="0" y1="-2208" y2="-2208" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2144" type="pin BUSB_12DP_24S" />
+        <line x2="0" y1="-2144" y2="-2144" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2080" type="pin BUSB_12DN_25S" />
+        <line x2="0" y1="-2080" y2="-2080" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-2016" type="pin BUSB_13DP_26S" />
+        <line x2="0" y1="-2016" y2="-2016" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1952" type="pin BUSB_13DN_27S" />
+        <line x2="0" y1="-1952" y2="-1952" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1888" type="pin BUSB_14DP_28S" />
+        <line x2="0" y1="-1888" y2="-1888" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1824" type="pin BUSB_14DN_29S" />
+        <line x2="0" y1="-1824" y2="-1824" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1760" type="pin BUSB_15DP_30S" />
+        <line x2="0" y1="-1760" y2="-1760" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1696" type="pin BUSB_15DN_31S" />
+        <line x2="0" y1="-1696" y2="-1696" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1632" type="pin BUSA_07DP_14S" />
+        <line x2="0" y1="-1632" y2="-1632" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1568" type="pin BUSA_07DN_15S" />
+        <line x2="0" y1="-1568" y2="-1568" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1504" type="pin BUSA_06DP_12S" />
+        <line x2="0" y1="-1504" y2="-1504" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1440" type="pin BUSA_06DN_13S" />
+        <line x2="0" y1="-1440" y2="-1440" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1376" type="pin BUSA_05DP_10S" />
+        <line x2="0" y1="-1376" y2="-1376" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1312" type="pin BUSA_05DN_11S" />
+        <line x2="0" y1="-1312" y2="-1312" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1248" type="pin BUSA_04DP_08S" />
+        <line x2="0" y1="-1248" y2="-1248" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1184" type="pin BUSA_04DN_09S" />
+        <line x2="0" y1="-1184" y2="-1184" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1120" type="pin BUSA_03DP_06S" />
+        <line x2="0" y1="-1120" y2="-1120" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1056" type="pin BUSA_03DN_07S" />
+        <line x2="0" y1="-1056" y2="-1056" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-992" type="pin BUSA_02DP_04S" />
+        <line x2="0" y1="-992" y2="-992" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-928" type="pin BUSA_02DN_05S" />
+        <line x2="0" y1="-928" y2="-928" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-864" type="pin BUSA_01DP_02S" />
+        <line x2="0" y1="-864" y2="-864" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-800" type="pin BUSA_01DN_03S" />
+        <line x2="0" y1="-800" y2="-800" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-736" type="pin BUSA_00DP_00S" />
+        <line x2="0" y1="-736" y2="-736" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-672" type="pin BUSA_00DN_01S" />
+        <line x2="0" y1="-672" y2="-672" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-608" type="pin BUSA_11DN_23S" />
+        <line x2="0" y1="-608" y2="-608" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin BUSA_12DP_24S" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin BUSA_30DP_60S" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin BUSA_30DN_61S" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin BUSA_29DP_58S" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin BUSA_29DN_59S" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin BUSA_28DP_56S" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin BUSA_28DN_57S" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin BUSA_26DP_52S" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin BUSA_26DN_53S" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-5472" type="pin BUSC_25DN_51S" />
+        <line x2="592" y1="-5472" y2="-5472" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-5232" type="pin BUSC_25DP_50S" />
+        <line x2="592" y1="-5232" y2="-5232" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-4992" type="pin BUSC_24DN_49S" />
+        <line x2="592" y1="-4992" y2="-4992" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-4752" type="pin BUSC_24DP_48S" />
+        <line x2="592" y1="-4752" y2="-4752" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-4512" type="pin BUSC_15DN_31S" />
+        <line x2="592" y1="-4512" y2="-4512" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-4272" type="pin BUSC_15DP_30S" />
+        <line x2="592" y1="-4272" y2="-4272" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-4032" type="pin BUSC_14DN_29S" />
+        <line x2="592" y1="-4032" y2="-4032" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-3792" type="pin BUSC_14DP_28S" />
+        <line x2="592" y1="-3792" y2="-3792" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-3552" type="pin BUSC_16DN_33S" />
+        <line x2="592" y1="-3552" y2="-3552" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-3312" type="pin BUSC_27DN_55S" />
+        <line x2="592" y1="-3312" y2="-3312" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-3072" type="pin BUSC_26DN_53S" />
+        <line x2="592" y1="-3072" y2="-3072" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-2832" type="pin GENERAL_12DP_24S" />
+        <line x2="592" y1="-2832" y2="-2832" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-2592" type="pin BUSBHS_03DP_06S" />
+        <line x2="592" y1="-2592" y2="-2592" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-2352" type="pin BUSBHS_03DN_07S" />
+        <line x2="592" y1="-2352" y2="-2352" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-2112" type="pin GENERAL_12DN_25S" />
+        <line x2="592" y1="-2112" y2="-2112" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-1872" type="pin INTERNAL_08DP_16S" />
+        <line x2="592" y1="-1872" y2="-1872" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-1632" type="pin INTERNAL_08DN_17S" />
+        <line x2="592" y1="-1632" y2="-1632" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-1392" type="pin BUSDD_05DP_10S" />
+        <line x2="592" y1="-1392" y2="-1392" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-1152" type="pin BUSDD_04DP_08S" />
+        <line x2="592" y1="-1152" y2="-1152" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-912" type="pin BUSDD_03DP_06S" />
+        <line x2="592" y1="-912" y2="-912" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-672" type="pin BUSDD_02DP_04S" />
+        <line x2="592" y1="-672" y2="-672" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-432" type="pin BUSDD_01DP_02S" />
+        <line x2="592" y1="-432" y2="-432" x1="528" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="520" y="-192" type="pin BUSDD_00DP_00S" />
+        <line x2="592" y1="-192" y2="-192" x1="528" />
+    </graph>
+</symbol>

@@ -1,0 +1,2 @@
+vhdl isim_temp "WriteRegistser.vhd"
+vhdl isim_temp "WriteRegister_tb.vhd"

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Collin/Fermilab/BurstCounter/Main Project/GEL_CAPTAN/xst"
+elaborate
+-ifn reset_tester.prj
+-ifmt mixed

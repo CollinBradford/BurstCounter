@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_isim_beh.exe" -prj "D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_beh.prj" "work.WriteRegister_tb" 
