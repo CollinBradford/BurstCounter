@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb_isim_beh.exe" -prj "C:/Users/Collin/Fermilab/Main Project 1/GEL_CAPTAN/data_send_tb_beh.prj" "work.data_send_tb" 
