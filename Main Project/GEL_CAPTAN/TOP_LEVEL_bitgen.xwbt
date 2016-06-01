@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Collin\Fermilab\BurstCounter\Main Project\GEL_CAPTAN\TOP_LEVEL.ncd
-OUTFILE=C:\Users\Collin\Fermilab\BurstCounter\Main Project\GEL_CAPTAN\TOP_LEVEL.bit
-FAMILY=Virtex4
-PART=xc4vlx25-10ff668
-WORKINGDIR=C:\Users\Collin\Fermilab\BurstCounter\Main Project\GEL_CAPTAN
-LICENSE=WebPack
-USER_INFO=211103197_0_0_373
