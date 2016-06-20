@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : TOP_LEVEL.vhf
--- /___/   /\     Timestamp : 05/18/2016 10:18:12
+-- /___/   /\     Timestamp : 06/17/2016 12:00:57
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -sympath "C:/Users/cbradfor/BurstCounter/Main Project/ipcore_dir" -intstyle ise -family virtex4 -flat -suppress -vhdl "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.vhf" -w "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/TOP_LEVEL.sch"
+--Command: sch2hdl -sympath D:/cbradford/RegisterSet-2.0/ipcore_dir -intstyle ise -family virtex4 -flat -suppress -vhdl D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/TOP_LEVEL.vhf -w D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/TOP_LEVEL.sch
 --Design Name: TOP_LEVEL
 --Device: virtex4
 --Purpose:
@@ -628,6 +628,7 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal PHY_TXEN_sig             : std_logic;
    signal PHY_TXER_sig             : std_logic;
    signal psi_status               : std_logic_vector (63 downto 0);
+   signal reg_data                 : std_logic_vector (63 downto 0);
    signal reset                    : std_logic;
    signal rx_addr                  : std_logic_vector (31 downto 0);
    signal rx_data                  : std_logic_vector (63 downto 0);
@@ -670,6 +671,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
    signal XLXN_15153               : std_logic;
    signal XLXN_15154               : std_logic;
    signal XLXN_15166               : std_logic;
+   signal XLXN_15173               : std_logic;
+   signal XLXN_15184               : std_logic;
    signal XLXI_5338_in3_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in4_openSignal : std_logic_vector (63 downto 0);
    signal XLXI_5338_in5_openSignal : std_logic_vector (63 downto 0);
@@ -970,7 +973,8 @@ architecture BEHAVIORAL of TOP_LEVEL is
              clk       : in    std_logic; 
              rst       : in    std_logic; 
              b_data_we : out   std_logic; 
-             b_data    : out   std_logic_vector (63 downto 0));
+             b_data    : out   std_logic_vector (63 downto 0); 
+             throttle  : in    std_logic);
    end component;
    
    component Pulser
@@ -985,6 +989,22 @@ architecture BEHAVIORAL of TOP_LEVEL is
              high        : out   std_logic; 
              unknown     : out   std_logic; 
              unconnected : out   std_logic);
+   end component;
+   
+   component WriteRegistser
+      port ( rst        : in    std_logic; 
+             clk        : in    std_logic; 
+             rx_wren    : in    std_logic; 
+             rx_addr    : in    std_logic_vector (31 downto 0); 
+             rx_data    : in    std_logic_vector (63 downto 0); 
+             user_ready : out   std_logic; 
+             reg_out    : out   std_logic_vector (63 downto 0));
+   end component;
+   
+   component throttle
+      port ( clk      : in    std_logic; 
+             rst      : in    std_logic; 
+             throttle : out   std_logic);
    end component;
    
    attribute IOBDELAY_TYPE of XLXI_3405 : label is "VARIABLE";
@@ -1887,7 +1907,7 @@ begin
                 PHY_RX_DV=>GMII_RX_DV_0_sig,
                 PHY_RX_ER=>GMII_RX_ER_0_sig,
                 reset_in=>XLXN_15140,
-                tx_data(63 downto 0)=>tx_data(63 downto 0),
+                tx_data(63 downto 0)=>reg_data(63 downto 0),
                 b_enable=>b_enable,
                 PHY_TXD(7 downto 0)=>PHY_TXD_sig(7 downto 0),
                 PHY_TX_EN=>PHY_TXEN_sig,
@@ -1905,6 +1925,7 @@ begin
       port map (b_enable=>b_enable,
                 clk=>MASTER_CLK,
                 rst=>reset,
+                throttle=>XLXN_15184,
                 b_data(63 downto 0)=>b_data(63 downto 0),
                 b_data_we=>b_data_we);
    
@@ -1947,6 +1968,20 @@ begin
    XLXI_6244 : OBUF
       port map (I=>b_enable,
                 O=>U10_2);
+   
+   XLXI_6245 : WriteRegistser
+      port map (clk=>MASTER_CLK,
+                rst=>reset,
+                rx_addr(31 downto 0)=>rx_addr(31 downto 0),
+                rx_data(63 downto 0)=>rx_data(63 downto 0),
+                rx_wren=>rx_wren,
+                reg_out(63 downto 0)=>reg_data(63 downto 0),
+                user_ready=>XLXN_15173);
+   
+   XLXI_6246 : throttle
+      port map (clk=>MASTER_CLK,
+                rst=>reset,
+                throttle=>XLXN_15184);
    
 end BEHAVIORAL;
 

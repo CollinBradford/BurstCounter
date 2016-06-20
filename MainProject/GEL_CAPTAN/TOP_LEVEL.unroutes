@@ -1,11 +1,11 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Thu May 19 11:50:31 2016
+Fri Jun 17 17:16:24 2016
 
 All signals are completely routed.
 
-WARNING:ParHelpers:361 - There are 81 loadless signals in this design. This design will cause Bitgen to issue DRC
+WARNING:ParHelpers:361 - There are 83 loadless signals in this design. This design will cause Bitgen to issue DRC
    warnings.
 
    FADC_MEM_RISE_VECTOR_0/doutb<0>
@@ -69,6 +69,8 @@ WARNING:ParHelpers:361 - There are 81 loadless signals in this design. This desi
    XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full
    XLXI_6227/data_manager_blk/tx_data_fifo_empty
    XLXN_15151
+   fadc_ctrl_data<11>
+   fadc_ctrl_data<15>
    icon_control0<10>
    icon_control0<11>
    icon_control0<15>

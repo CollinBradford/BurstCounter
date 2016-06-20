@@ -44,6 +44,7 @@ ARCHITECTURE behavior OF data_send_tb IS
          b_enable : IN  std_logic;
          clk : IN  std_logic;
          rst : IN  std_logic;
+			throttle : IN std_logic;
          b_data : OUT  std_logic_vector(63 downto 0);
          b_data_we : OUT  std_logic
         );
@@ -54,6 +55,7 @@ ARCHITECTURE behavior OF data_send_tb IS
    signal b_enable : std_logic := '0';
    signal clk : std_logic := '0';
    signal rst : std_logic := '1';
+	signal throttle : std_logic := '0';
 
  	--Outputs
    signal b_data : std_logic_vector(63 downto 0);
@@ -69,6 +71,7 @@ BEGIN
           b_enable => b_enable,
           clk => clk,
           rst => rst,
+			 throttle => throttle,
           b_data => b_data,
           b_data_we => b_data_we
         );
@@ -93,6 +96,20 @@ BEGIN
 		b_enable <= '1';
 
       wait for clk_period*10;
+		
+		throttle <= '1';
+		
+		wait for clk_period;
+		
+		throttle <= '0';
+		
+		wait for clk_period * 2;
+		
+		throttle <= '1';
+		
+		wait for clk_period;
+		
+		throttle <= '0';
 
       -- insert stimulus here 
 

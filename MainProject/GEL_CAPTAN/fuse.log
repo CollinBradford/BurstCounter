@@ -1,13 +1,13 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb_isim_beh.exe -prj C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb_beh.prj work.data_send_tb 
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/data_send_tb_isim_beh.exe" -prj "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/data_send_tb_beh.prj" "work.data_send_tb" 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send.vhd" into library work
-Parsing VHDL file "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb.vhd" into library work
-Parsing VHDL file "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/../ipcore_dir/ADDR_FIFO.vhd" into library work
-Parsing VHDL file "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/../ipcore_dir/DATA_FIFO_0.vhd" into library work
-Parsing VHDL file "C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/../ipcore_dir/INFO_FIFO_0.vhd" into library work
+Parsing VHDL file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/data_send.vhd" into library work
+Parsing VHDL file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/data_send_tb.vhd" into library work
+Parsing VHDL file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/../ipcore_dir/ADDR_FIFO.vhd" into library work
+Parsing VHDL file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/../ipcore_dir/DATA_FIFO_0.vhd" into library work
+Parsing VHDL file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/../ipcore_dir/INFO_FIFO_0.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -17,8 +17,7 @@ Compiling package std_logic_unsigned
 Compiling architecture behavioral of entity data_send [data_send_default]
 Compiling architecture behavior of entity data_send_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
-Built simulation executable C:/Users/cbradfor/BurstCounter/Main Project/GEL_CAPTAN/data_send_tb_isim_beh.exe
-Fuse Memory Usage: 36220 KB
+Built simulation executable D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/data_send_tb_isim_beh.exe
+Fuse Memory Usage: 36204 KB
 Fuse CPU Usage: 545 ms

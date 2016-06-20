@@ -1,19 +1,18 @@
 Release 14.7 ngcbuild P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Command Line: ngcbuild.exe -dd D:/rrivera_projects/MainProject/GEL_CAPTAN/_ngo
--sd ../ipcore_dir -p xc4vlx25-ff668-10 -i
-D:\rrivera_projects\MainProject\GEL_CAPTAN\TOP_LEVEL.ngc
-D:\rrivera_projects\MainProject\GEL_CAPTAN\TOP_LEVEL_cs.ngc
+Command Line: ngcbuild.exe -dd D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/_ngo -sd
+../ipcore_dir -p xc4vlx25-ff668-10 -i
+D:\cbradford\RegisterSet-2.0\GEL_CAPTAN\TOP_LEVEL.ngc
+D:\cbradford\RegisterSet-2.0\GEL_CAPTAN\TOP_LEVEL_cs.ngc
 
-Reading NGO file "D:/rrivera_projects/MainProject/GEL_CAPTAN/TOP_LEVEL.ngc" ...
+Reading NGO file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/TOP_LEVEL.ngc" ...
 Loading design module
-"D:/rrivera_projects/MainProject/GEL_CAPTAN/DATA_FIFO_0.ngc"...
+"D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/DATA_FIFO_0.ngc"...
 Loading design module
-"D:/rrivera_projects/MainProject/GEL_CAPTAN/INFO_FIFO_0.ngc"...
+"D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/INFO_FIFO_0.ngc"...
 Loading design module "../ipcore_dir/ADDR_FIFO.ngc"...
-Loading design module
-"D:/rrivera_projects/MainProject/GEL_CAPTAN/fadc_mem.ngc"...
+Loading design module "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/fadc_mem.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -26,12 +25,11 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 198920 kilobytes
+Total memory usage is 198196 kilobytes
 
-Writing NGC file "D:/rrivera_projects/MainProject/GEL_CAPTAN/TOP_LEVEL_cs.ngc"
-...
+Writing NGC file "D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/TOP_LEVEL_cs.ngc" ...
 Total REAL time to NGCBUILD completion:  3 sec
 Total CPU time to NGCBUILD completion:   3 sec
 
 Writing NGCBUILD log file
-"D:/rrivera_projects/MainProject/GEL_CAPTAN/TOP_LEVEL_cs.blc"...
+"D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/TOP_LEVEL_cs.blc"...
