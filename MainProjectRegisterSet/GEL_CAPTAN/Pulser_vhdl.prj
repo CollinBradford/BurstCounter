@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Collin\Fermilab\BurstCounter\Main Project\GEL_CAPTAN\Pulser.vhd"
+vhdl work "C:\Users\Collin\Fermilab\BurstCounter\Main Project\ipcore_dir\ADDR_FIFO.vhd"
+vhdl work "C:\Users\Collin\Fermilab\BurstCounter\Main Project\ipcore_dir\DATA_FIFO_0.vhd"
+vhdl work "C:\Users\Collin\Fermilab\BurstCounter\Main Project\ipcore_dir\INFO_FIFO_0.vhd"

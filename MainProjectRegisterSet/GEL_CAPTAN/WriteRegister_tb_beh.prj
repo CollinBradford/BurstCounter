@@ -1,0 +1,5 @@
+vhdl work "WriteRegistser.vhd"
+vhdl work "WriteRegister_tb.vhd"
+vhdl work "../ipcore_dir/ADDR_FIFO.vhd"
+vhdl work "../ipcore_dir/DATA_FIFO_0.vhd"
+vhdl work "../ipcore_dir/INFO_FIFO_0.vhd"

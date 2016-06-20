@@ -2,6 +2,7 @@
 b_enable
 clk
 rst
+throttle
 [Outputs]
 b_data_we
 =b_data[63:0]=

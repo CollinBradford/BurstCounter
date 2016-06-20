@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/cbradford/MainProjectRegisterSet/GEL_CAPTAN/WriteRegister_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="writeregister_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/writeregister_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/rx_wren" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_wren</obj_property>
+      <obj_property name="ObjectShortName">rx_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/rx_data" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_data[63:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_data[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/reg_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_out[63:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_out[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/user_ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">user_ready</obj_property>
+      <obj_property name="ObjectShortName">user_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/rx_addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_addr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rx_addr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/writeregister_tb/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>

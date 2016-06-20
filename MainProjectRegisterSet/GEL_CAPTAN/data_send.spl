@@ -1,0 +1,8 @@
+[Inputs]
+b_enable
+clk
+rst
+[Outputs]
+b_data_we
+=b_data[63:0]=
+[BiDir]

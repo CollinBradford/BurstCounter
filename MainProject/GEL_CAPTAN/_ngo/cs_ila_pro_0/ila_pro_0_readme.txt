@@ -1,5 +1,5 @@
 The following files were generated for 'ila_pro_0' in directory
-C:\Users\cbradfor\BurstCounter\Main Project\GEL_CAPTAN\_ngo\cs_ila_pro_0\
+D:\cbradford\RegisterSet-2.0\GEL_CAPTAN\_ngo\cs_ila_pro_0\
 
 XCO file generator:
    Generate an XCO file for compatibility with legacy flows.

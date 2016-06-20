@@ -9,28 +9,28 @@ Target Device  : xc4vlx25
 Target Package : ff668
 Target Speed   : -10
 Mapper Version : virtex4 -- $Revision: 1.55 $
-Mapped Date    : Thu May 19 11:49:15 2016
+Mapped Date    : Fri Jun 17 17:15:06 2016
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   85
+Number of warnings:   87
 Logic Utilization:
-  Total Number Slice Registers:       2,480 out of  21,504   11%
-    Number used as Flip Flops:        2,479
+  Total Number Slice Registers:       2,616 out of  21,504   12%
+    Number used as Flip Flops:        2,615
     Number used as Latches:               1
-  Number of 4 input LUTs:             4,799 out of  21,504   22%
+  Number of 4 input LUTs:             4,671 out of  21,504   21%
 Logic Distribution:
-  Number of occupied Slices:          3,573 out of  10,752   33%
-    Number of Slices containing only related logic:   3,573 out of   3,573 100%
-    Number of Slices containing unrelated logic:          0 out of   3,573   0%
+  Number of occupied Slices:          3,597 out of  10,752   33%
+    Number of Slices containing only related logic:   3,597 out of   3,597 100%
+    Number of Slices containing unrelated logic:          0 out of   3,597   0%
       *See NOTES below for an explanation of the effects of unrelated logic.
-  Total Number of 4 input LUTs:       5,112 out of  21,504   23%
-    Number used as logic:             4,270
-    Number used as a route-thru:        313
+  Total Number of 4 input LUTs:       4,942 out of  21,504   22%
+    Number used as logic:             4,096
+    Number used as a route-thru:        271
     Number used for Dual Port RAMs:     384
       (Two LUTs used per Dual Port RAM)
-    Number used as Shift registers:     145
+    Number used as Shift registers:     191
 
   The Slice Logic Distribution report is not meaningful if the design is
   over-mapped for a non-slice resource or if Placement fails.
@@ -38,8 +38,8 @@ Logic Distribution:
   Number of bonded IOBs:                107 out of     448   23%
   Number of BUFG/BUFGCTRLs:              12 out of      32   37%
     Number used as BUFGs:                12
-  Number of FIFO16/RAMB16s:              48 out of      72   66%
-    Number used as RAMB16s:              48
+  Number of FIFO16/RAMB16s:              47 out of      72   65%
+    Number used as RAMB16s:              47
   Number of DCM_ADVs:                     5 out of       8   62%
   Number of BSCAN_VIRTEX4s:               1 out of       4   25%
   Number of IDELAYCTRLs:                  1 out of      16    6%
@@ -47,9 +47,9 @@ Logic Distribution:
   Number of RPM macros:           14
 Average Fanout of Non-Clock Nets:                3.61
 
-Peak Memory Usage:  617 MB
-Total REAL time to MAP completion:  49 secs 
-Total CPU time to MAP completion:   48 secs 
+Peak Memory Usage:  609 MB
+Total REAL time to MAP completion:  51 secs 
+Total CPU time to MAP completion:   49 secs 
 
 Table of Contents
 -----------------
@@ -72,12 +72,6 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:Security:43 - No license file was found in the standard Xilinx license
-directory.
-WARNING:Security:44 - Since no license file was found,
-WARNING:Security:42 - Your license support version '2016.05' for ISE expires in
-12 days after which you will not qualify for Xilinx software updates or new
-releases.
 WARNING:MapLib:701 - Signal SECONDARY_CLK connected to top level port
    SECONDARY_CLK has been removed.
 WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFG symbol
@@ -91,7 +85,7 @@ WARNING:LIT:178 - Clock buffer BUFG symbol "XLXI_5993" (output signal=CLK_375)
    Pin I2 of XLXI_6004/I_36_8
 WARNING:PhysDesignRules:372 - Gated clock. Clock net icon_control0<13> is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
@@ -100,17 +94,20 @@ WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss
    .wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
+   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.
    wsts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
-   design.
+WARNING:PhysDesignRules:367 - The signal <fadc_ctrl_data<11>> is incomplete. The signal does not drive any load pins in
+   the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<35>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<24>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <XLXN_15151> is incomplete. The signal does not drive any load pins in the
    design.
@@ -186,13 +183,7 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/rx_info_fif
    does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D15> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The signal does not drive any load pins in the
-   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D8> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
-   design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D5> is incomplete. The signal does not drive any load pins in the
    design.
@@ -202,75 +193,77 @@ WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D11> is incomplete. The sign
    design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D12> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
-   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D14> is incomplete. The signal does not drive any load pins in the
    design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
-   does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/TX_CTRL_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss
    .rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.r
    sts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
-   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/empty> is incomplete. The signal does
    not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_data_fifo_empty> is incomplete. The signal does
    not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
+   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/tx_ctrl_info_fifo_full> is incomplete. The signal
+   does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal
-   <XLXI_6227/data_manager_blk/RX_SRC_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.w
-   sts/ram_full_i> is incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<30>> is incomplete. The signal does not drive any load pins in
-   the design.
+   <XLXI_6227/data_manager_blk/RX_SRC_ADDR_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<16>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<18>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<17>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<33>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<29>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
-   the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<15>> is incomplete. The signal does not drive any load pins in
-   the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<10>> is incomplete. The signal does not drive any load pins in
    the design.
 WARNING:PhysDesignRules:367 - The signal <icon_control0<31>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <icon_control0<34>> is incomplete. The signal does not drive any load pins in
+WARNING:PhysDesignRules:367 - The signal <icon_control0<32>> is incomplete. The signal does not drive any load pins in
    the design.
-WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/RX_DATA_FIFO/empty> is incomplete. The signal does
-   not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<7>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<11>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<23>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<27>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<26>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal
+   <XLXI_6227/data_manager_blk/TX_CTRL_MAC_FIFO/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.
+   rsts/ram_empty_i> is incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<25>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <icon_control0<28>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_6051/Q<13>> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <fadc_ctrl_data<15>> is incomplete. The signal does not drive any load pins in
+   the design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D9> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D13> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D6> is incomplete. The signal does not drive any load pins in the
+   design.
+WARNING:PhysDesignRules:367 - The signal <XLXI_3432/D7> is incomplete. The signal does not drive any load pins in the
+   design.
 WARNING:PhysDesignRules:367 - The signal <XLXI_6227/data_manager_blk/TX_CTRL_FIFO/full> is incomplete. The signal does
    not drive any load pins in the design.
 
 Section 3 - Informational
 -------------------------
-INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
-'27003@eselm1'.
-INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
-'27003@eselm1'.
-INFO:Security:54 - 'xc4vlx25' is a WebPack part.
 INFO:LIT:243 - Logical network icon_control0<10> has no load.
-INFO:LIT:395 - The above info message is repeated 314 more times for the
+INFO:LIT:395 - The above info message is repeated 298 more times for the
    following (max. 5 shown):
    icon_control0<11>,
    icon_control0<15>,
@@ -296,9 +289,9 @@ INFO:PhysDesignRules:1437 - To achieve optimal frequency synthesis performance w
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  36 block(s) removed
-  99 block(s) optimized away
-   3 signal(s) removed
+  42 block(s) removed
+ 127 block(s) optimized away
+   6 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -347,6 +340,15 @@ Loadless block "U_ila_pro_0/U0/I_NO_D.U_ILA/U_TRIG/U_TC/I_STORAGE_QUAL.U_CAP_B"
 Loadless block "XLXI_4136" (CKBUF) removed.
  The signal "SECONDARY_CLK" is loadless and has been removed.
   Loadless block "SECONDARY_CLK" (PAD) removed.
+Loadless block "XLXI_6135" (BUF) removed.
+Loadless block "XLXI_6137" (BUF) removed.
+ The signal "fadc_done" is loadless and has been removed.
+  Loadless block "XLXI_6057/I_36_8" (OR) removed.
+   The signal "XLXI_6057/M1" is loadless and has been removed.
+    Loadless block "XLXI_6057/I_36_9" (AND) removed.
+   The signal "XLXI_6057/M0" is loadless and has been removed.
+    Loadless block "XLXI_6057/I_36_7" (AND) removed.
+Loadless block "XLXI_6138" (BUF) removed.
 Loadless block "XLXI_6202" (CKBUF) removed.
  The signal "XLXN_15092" is loadless and has been removed.
 Loadless block "XLXI_6235" (BUF) removed.
@@ -380,19 +382,10 @@ GND 		FADC_MEM_RISE_VECTOR_3/XST_GND
 VCC 		FADC_MEM_RISE_VECTOR_3/XST_VCC
 GND 		U_icon_pro/XST_GND
 VCC 		U_icon_pro/XST_VCC
-LUT4 		U_ila_pro_0/U0/I_NO_D.U_ILA/U_STAT/F_SSTAT[14].I_STAT.U_STAT
-   optimized to 0
 GND 		U_ila_pro_0/XST_GND
 VCC 		U_ila_pro_0/XST_VCC
-GND 		XLXI_4359/XST_GND
-VCC 		XLXI_4359/XST_VCC
-LUT3 		XLXI_5338/Mmux_muxout_656
-   optimized to 0
-GND 		XLXI_5338/XST_GND
 GND 		XLXI_6047/XST_GND
 VCC 		XLXI_6047/XST_VCC
-BUF 		XLXI_6135
-GND 		XLXI_6185/XST_GND
 VCC 		XLXI_6185/XST_VCC
 GND 		XLXI_6227/XST_GND
 VCC 		XLXI_6227/XST_VCC
@@ -435,8 +428,11 @@ GND 		XLXI_6227/reset_mgr/XST_GND
 VCC 		XLXI_6227/reset_mgr/XST_VCC
 GND 		XLXI_6228
 GND 		XLXI_6229/XST_GND
+VCC 		XLXI_6229/XST_VCC
 GND 		XLXI_6232/XST_GND
 VCC 		XLXI_6232/XST_VCC
+GND 		XLXI_6246/XST_GND
+VCC 		XLXI_6246/XST_VCC
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

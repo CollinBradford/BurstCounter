@@ -1,0 +1,2 @@
+vhdtdtfi -lib work throttle.vhd -prj dig_mac -o throttle.spl -module throttle -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex4 throttle.spl D:/cbradford/RegisterSet-2.0/GEL_CAPTAN/throttle.sym 

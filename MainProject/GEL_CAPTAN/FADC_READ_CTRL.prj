@@ -1,0 +1,2 @@
+vhdl work "fadc_params_package.vhd"
+vhdl work "FADC_READ_CTRL.vhd"

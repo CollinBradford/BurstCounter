@@ -1,0 +1,8 @@
+[Inputs]
+rst
+[Outputs]
+low
+high
+unknown
+unconnected
+[BiDir]

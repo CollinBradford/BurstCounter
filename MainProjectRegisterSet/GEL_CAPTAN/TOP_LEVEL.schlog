@@ -1,0 +1,9 @@
+select figure at 3759 1880 8 -branches -sn=2
+undo
+select figure at 3759 1880 8 -branches -all -sn=2
+select figure at 5222 2112 8 -branches -sn=2
+select figure at 4321 1812 8 -branches -sn=2
+undo
+undo
+undo
+select figure at 4552 2473 8 -branches -sn=2
